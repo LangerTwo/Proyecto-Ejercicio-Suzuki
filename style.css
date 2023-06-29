@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Nav*/
+.container{
+   width: 100%;
+    height: 60px;
+}
+
+.nav{
+    display: flex;
+    align-items: stretch;
+    height: 60px;
+   /* justify-content: space-between;
+    
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 24px;*/
+}
+
+.cont-logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cont-list{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-right: 24px;
+    max-width: fit-content;
+    padding-left: 10px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    gap: 16px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.modelos{
+    display: grid;
+    width: 124px;
+    place-content: center;
+    height: 100%;
+    grid-template-columns: repeat(1, 80% 10%);
+}
+
+.link-modelos{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    grid-column: 1/2;
+    color: black;
+   
+}
+.icon-down{
+    background-image: url(imagenes/ic_dropdown.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    grid-column: 2/3;
+}
+
+.posventa{
+    display: grid;
+    width: 124px;
+    place-content: center;
+    height: 100%;
+    grid-template-columns: repeat(1, 80% 10%);
+}
+.link-pos{
+    text-decoration: none;
+    color: black;
+}
+
+.sucursales{
+    width: 124px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.usados{
+    width: 124px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.promociones{
+    width: 124px;
+    height: 100%;
+    color: brown;
+    display: flex;
+    align-items: center;
+}
+
+.lupa{
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-lupa{
+    width: 40px;
+    height: 40px;
+}
+
+.li-icon{
+    list-style: none;
+}
+
+/*section 1*/
+
+/*banner*/
+
+/*imagen*/
+
+.section{
+    display: block;
+}
+
+.main{
+    width: 100%;
+    height: 650px; 
+}
+
+.degradado{
+    background: linear-gradient(88deg, #000000 14.89%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.7;
+    width: 66%;
+    position: absolute;
+    top: 6%;
+    height: 606px;
+}
+
+.con-img{
+    position: relative;
+}
+.img{
+    position: relative;
+    width: 100%;
+    height: 610px;
+    /*background-image: url(imagenes/img1.png);*/
+}
+
+/*texto*/
+.cont-txt{
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    width: 50%;
+    height: 466px;
+    text-transform: uppercase;
+   
+}
+
+
+.titulo{
+    font-size: 64px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 60px; 
+    margin-bottom: 15px;
+    color: white;
+}
+
+.bold{
+    font-size: 85px;
+    line-height: 95px;
+}
+
+.barra{
+    background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 8px;
+    height: 1px;
+    transform: translateX(-5px);
+}
+
+.txtpf{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    color: white;
+}
+
+.cont-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 413px;
+    height: 138px;
+}
+
+.btn-rojo{
+    padding: 10px 20px;
+    background-color: #DE0039;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 413px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-blanco{
+    padding: 10px 20px;
+    background-color: white;
+    color: #DE0039;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 413px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*section 2*/
+
+.cars{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(0, 225, 255);
+}
+
+.cont-titulo{
+    display: block;
+    margin: 48px auto 40px;
+    width: 85%;
+}
+
+.titul{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 57px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.marca-car{
+    display: flex;
+    gap: 84px;
+   /* justify-content: center;*/
+    margin: 0 auto;
+    padding: 0 30px;
+    width: fit-content;
+}
+
+.boton{
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.boton.active{
+    color: #DE0039;
+}
