@@ -599,3 +599,46 @@
    top: -160%;
 
 }
+
+/*Parte 5*/
+
+.part-5{
+    width: 100%;
+    height: 700px;
+   /* background-color: #DE0039;*/
+    
+}
+
+.caja-5{
+    margin: 0 auto;
+}
+
+.titulo-5{
+    font-size:46px;
+    text-transform:uppercase;
+    line-height:60px;
+    text-align:center;
+    margin-bottom:10px;
+    color:#000;
+}
+
+.txt-parraf{
+    text-align:center;
+    font-size:30px;
+    line-height:20px;
+    color:#000;
+    margin-bottom:48px;
+}
+
+.video{
+    display:flex;
+    justify-content:center;
+     /*margin: 0 auto;*/
+}
+
+#parte5 iframe{
+    width:1280px;
+    height:600px;
+   /* background:linear-gradient(180deg, #00000 19.33%, rgba(0, 0, 0, 100%));*/
+    
+}
