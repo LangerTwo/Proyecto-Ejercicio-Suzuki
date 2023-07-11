@@ -759,3 +759,23 @@
     height: 532px;
     background-color: aqua;
  }
+
+ .foot-social {
+    display: flex;
+    justify-content: center;
+}
+
+.foot_link {
+    width: 1100px;
+    background: gray;
+}
+
+.img-pin {
+    width: 25px;
+    height: 25px;
+}
+
+#parte7 img {
+    width: 100%;
+    display: block;
+}
