@@ -7,19 +7,19 @@
 /*Nav*/
 .container{
    width: 100%;
-    height: 60px;
+    height: 80px;
 }
 
 .nav{
     display: flex;
     align-items: stretch;
-    height: 60px;
+    height: 80px;
+    padding-left: 24px;
    /* justify-content: space-between;
-    
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding-left: 24px;*/
+    */
 }
 
 .cont-logo{
@@ -857,3 +857,5 @@
  .foot-suv{
     list-style: none;
  }
+
+ /**Foot sup/
