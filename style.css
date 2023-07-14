@@ -960,7 +960,17 @@
 
 .menu-hiden{
     list-style: none;
-/* max-width: 0px; */
+    max-width: 0px;
+}
+
+nav.menu:hover ul.menu-hiden {
+    max-width: initial;
+}
+
+nav.menu:hover div.menu-text{
+    /*  background-color:aqua; */
+    /*   transition: .2s all ease; */
+     max-width:0;
 }
 
 .items{
