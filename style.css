@@ -585,6 +585,10 @@
     overflow: hidden;
 }
 
+div.img_box:hover img.img_box_1{
+    transform: scale(1.5);
+   }
+
 .img_box_1{
     transition: 0.3s;
     width:100%;
@@ -965,12 +969,13 @@
 
 nav.menu:hover ul.menu-hiden {
     max-width: initial;
+   /* transition: .5s all ease; */
 }
 
 nav.menu:hover div.menu-text{
-    /*  background-color:aqua; */
-    /*   transition: .2s all ease; */
-     max-width:0;
+    background-color:white;
+     transition: .5s all ease; 
+     width:0px;
 }
 
 .items{
@@ -979,6 +984,8 @@ nav.menu:hover div.menu-text{
     height: 70px;
     /* background-color: white; */
     display: grid;
+    /* place-content: center; */
+    text-align: center;
 }
 
 .link-hiden{
@@ -1008,4 +1015,36 @@ nav.menu:hover div.menu-text{
     color: #333333;
     padding-top: 5px;
     max-width: 50px;
+}
+
+/*Globo*/
+
+.globo{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(228, 100, 10);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1080;
+    border-radius: 50%;
+    margin-right: 14px;
+    margin-bottom: 10px;
+}
+
+.btn-globo{
+    
+}
+
+.num-globo{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 12px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    background: #C60C3E;
+    border-radius: 20px;
+    color: white;
 }
