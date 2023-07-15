@@ -44,9 +44,9 @@
     display: flex;
     align-items: center;
     gap: 32px;
-    padding-right: 24px;
+    /* padding-right: 24px; */
     max-width: fit-content;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 .list{
@@ -120,7 +120,7 @@
 }
 
 .lupa{
-    width: 100px;
+    width: 50px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -506,6 +506,8 @@
 
 .box1{
     max-width:290px;
+    width: 290px;
+    height: 342px;
     text-align:center;
 }
 
@@ -541,23 +543,13 @@
     color: #000000;
 }
 
-.box2{
-    max-width:290px;
-    text-align:center;
-}
-
-.box3{
-    max-width:290px;
-    text-align:center;
-}
-
 /*Section 4*/
 
 .part-4{
     width:100%;
-    height:400px;
-   /* background-color:red;*/
-    display:block;
+    height: 390px;
+    /* background-color:red; */
+    /* display:block; */
 }
 
 .title-4{
@@ -603,9 +595,11 @@ div.img_box:hover img.img_box_1{
 }
 
 .link_4{
-    text-decoration:none;
-    outline:none
+    /* text-decoration:none; */
+    outline:none;
+    color: white;
 }
+
 
 .title-h3{
     text-transform:uppercase;
@@ -622,8 +616,8 @@ div.img_box:hover img.img_box_1{
 .part-5{
     width: 100%;
     height: 800px;
-   /* background-color: #DE0039;*/
-    
+    /* background-color: #DE0039; */
+    margin-top: 64px;
 }
 
 .caja-5{
@@ -637,6 +631,8 @@ div.img_box:hover img.img_box_1{
     text-align:center;
     margin-bottom:10px;
     color:#000;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .txt-parraf{
@@ -645,6 +641,7 @@ div.img_box:hover img.img_box_1{
     line-height:20px;
     color:#000;
     margin-bottom:48px;
+    font-family: sans-serif;  
 }
 
 .video{
@@ -1028,12 +1025,14 @@ nav.menu:hover div.menu-text{
     bottom: 0;
     z-index: 1080;
     border-radius: 50%;
-    margin-right: 14px;
-    margin-bottom: 10px;
+    margin-right: 2%;
+    margin-bottom:4%;
 }
 
 .btn-globo{
-    
+   background-color:transparent;
+   border:none;
+   margin-bottom:4%;
 }
 
 .num-globo{
@@ -1047,4 +1046,13 @@ nav.menu:hover div.menu-text{
     background: #C60C3E;
     border-radius: 20px;
     color: white;
+}
+
+.img-globo{
+    width: 100%;
+}
+
+.imagen-globo{
+    width: 100px;
+    height: 100px;
 }
