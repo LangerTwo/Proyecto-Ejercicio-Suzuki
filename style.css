@@ -7,7 +7,8 @@
 /*Nav*/
 
 body::-webkit-scrollbar {
-    display:none;
+    /* display:none; */
+    width:0;
 }
 
 .main-nav{
@@ -610,11 +611,13 @@ div.img_box:hover img.img_box_1{
     filter:brightness(74%);
 }
 
-.text_img{
-   /* position:relative;
-    right:50%;
-    top:84%;
-    transform:translateX(-50%);*/
+.text_img {
+    position: relative;
+    top: auto;
+    bottom: 20%;
+    width: 350px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .link_4{
@@ -631,6 +634,11 @@ div.img_box:hover img.img_box_1{
    /* border-bottom:1px solid; */
    position: relative;
    top: -160%;
+   font-size: 40px;
+    transition: 300ms;
+    min-width: 240px;
+    margin: 0 auto;
+    text-align:center;
 
 }
 
