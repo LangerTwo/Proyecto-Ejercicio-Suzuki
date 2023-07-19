@@ -304,6 +304,7 @@ body::-webkit-scrollbar {
     line-height: 57px;
     font-style: normal;
     font-weight: 400;
+    font-family: sans-serif;
 }
 
 .marca-car{
@@ -315,6 +316,19 @@ body::-webkit-scrollbar {
     width: fit-content;
     margin-bottom: 20px;
 }
+
+.dis-text{
+  font-family: sans-serif; 
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* color: #000000; */
+}
+
+/* div.marca-car:hover button.boton{
+    color: #DE0039;
+} */
 
 .boton{
     text-transform: uppercase;
