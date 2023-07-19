@@ -80,6 +80,7 @@ body::-webkit-scrollbar {
     grid-column: 1/2; */
     color: black;
     text-decoration: none;
+    font-family: sans-serif;
 }
 .icon-down{
     background-image: url(imagenes/ic_dropdown.svg);
@@ -101,6 +102,7 @@ body::-webkit-scrollbar {
 .link-pos{
     text-decoration: none;
     color: black;
+    font-family: sans-serif;
 }
 
 .sucursales{
@@ -109,6 +111,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 .usados{
@@ -117,6 +120,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 .promociones{
@@ -126,6 +130,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 .lupa{
