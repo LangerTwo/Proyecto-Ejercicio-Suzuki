@@ -232,6 +232,7 @@ body::-webkit-scrollbar {
     color: white;
     text-transform: uppercase;
     max-width: 466px;
+    font-family: sans-serif;
 }
 
 .cont-btn{
@@ -256,6 +257,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 .btn-blanco{
@@ -272,6 +274,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 
