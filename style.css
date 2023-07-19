@@ -516,9 +516,11 @@ body::-webkit-scrollbar {
 .titulo-3{
     text-transform:uppercase;
     font-size:46px;
-    font-weight:400;
+    /* font-weight:400; */
+    font-weight: bold;
     line-height:57px;
     text-align:center;
+    font-family: sans-serif;
 }
 
 .box1{
@@ -532,13 +534,20 @@ body::-webkit-scrollbar {
     margin-bottom:27px;
 }
 
+.content {
+    width: 270px;
+    height: 233px;
+}
+
 .title_icon{
     text-transform:uppercase;
     font-size:36px;
-    font-weight:400;
+    /* font-weight:400; */
+    font-weight: bold;
     line-height:32px;
     text-align:center;
     margin-bottom:16px;
+    font-family: sans-serif;
 }
 
 .icon_paragraph{
@@ -548,16 +557,19 @@ body::-webkit-scrollbar {
     line-height:24px;
     text-align:center;
     margin-bottom:36px;
+    font-family: sans-serif;
 }
 
 .icon_btn{
     text-transform:uppercase;
     font-size:20px;
-    font-weight:400;
+    /* font-weight:400; */
+    font-weight: bold;
     line-height:25px;
     text-align:center;
     text-decoration-line:underline;  
     color: #000000;
+    font-family: sans-serif;
 }
 
 /*Section 4*/
