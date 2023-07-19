@@ -750,8 +750,8 @@ div.img_box:hover img.img_box_1{
  }
 
  .info-card{
-    width: 326.25px;
-    height: 467px;
+    width: 420px;
+    /* height: 467px; */
     box-shadow: 0px 1px 7px 2px rgb(0 0 0 / 5%);
     margin-right: 21px;
     /* background-color:gray; */
