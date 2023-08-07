@@ -694,7 +694,7 @@ div.img_box:hover img.img_box_1{
 
 .part-5{
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
     /* background-color: #DE0039; */
     /* margin-top: 64px; */
     margin: 64px 0 60px 0;
@@ -1151,9 +1151,9 @@ nav.menu:hover div.menu-text{
 /* Media Query*/
 
 @media(max-width:1280px){
-   #parte-5 .video {
-        width: 720px;
-        height: 300px;
+   #parte5 iframe {
+        width: 1000px;
+        height: 500px;
     }
 }
 
@@ -1190,6 +1190,11 @@ nav.menu:hover div.menu-text{
     .info-card-4 {
         display: none;
     }  
+    /* parte 5 */
+    #parte5 iframe {
+        width: 720px;
+        height: 300px;
+    }
     
     /*footer*/
     .caja-7 {
