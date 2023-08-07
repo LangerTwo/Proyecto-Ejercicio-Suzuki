@@ -696,7 +696,8 @@ div.img_box:hover img.img_box_1{
     width: 100%;
     height: 800px;
     /* background-color: #DE0039; */
-    margin-top: 64px;
+    /* margin-top: 64px; */
+    margin: 64px 0 60px 0;
 }
 
 .caja-5{
@@ -938,6 +939,7 @@ div.img_box:hover img.img_box_1{
     display: flex;
     border-bottom: 1px solid #dfe2e7;
     padding: 0 20px;
+    justify-content: center;
  }
 
  .title-suv{
@@ -964,14 +966,15 @@ div.img_box:hover img.img_box_1{
  /*Foot sup*/
 
  .foot-sup{
+    padding:15px 0 24px;
+    display:flex;
+    justify-content: center;
     /* width: 1100px; */
     /* height: 35px; */
     /* margin: 0 auto; */
-    /* background-color: white; */
-    padding:15px 0 24px;
+    /* background-color: white; */ 
     /* margin-bottom:20px; */
-    display:flex;
-}
+   }
 
 .sup-1{
     margin-left:17px;
@@ -1146,6 +1149,13 @@ nav.menu:hover div.menu-text{
 }
 
 /* Media Query*/
+
+@media(max-width:1280px){
+   #parte-5 .video {
+        width: 720px;
+        height: 300px;
+    }
+}
 
 @media(max-width:990px){
   /*  .body{
