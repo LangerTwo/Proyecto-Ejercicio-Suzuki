@@ -384,7 +384,7 @@
 }
 
 .car-modelo{
-    width: 50%;
+    width: 100%;
     height: 563px;
    /* background-color:#DE0039; */
 }
@@ -1196,6 +1196,16 @@ nav.menu:hover div.menu-text{
     .btn-blanco, .btn-rojo{
         width: 100%;
     }
+    /*Parte 2*/
+    .marca-car {
+        overflow: hidden;
+    }
+    .modelo-lista{
+        /*display: flex; */
+        justify-content: flex-start;
+        /* flex-wrap: nowrap; */
+}
+    }
     .info-car {
         flex-direction: column-reverse;
         align-items: center;
@@ -1263,7 +1273,7 @@ nav.menu:hover div.menu-text{
     .sup-1, .sup-2 {
         width: auto;
     }
-}
+
 
 @media(max-width:768px){
     .cont-txt{
