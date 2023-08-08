@@ -4,18 +4,21 @@
     box-sizing: border-box;
 }
 
+/* body{
+    max-width: 1440px;
+} */
+
 /*Nav*/
 
-body::-webkit-scrollbar {
-    /* display:none; */
+/* body::-webkit-scrollbar {
     width:0;
-}
+} */
 
 .main-nav{
     width: 100%;
     height: 80px;
     background-color: #FFFFFF;
-    z-index: 1980;
+    z-index: 1440;
     position: sticky;
     top: 0;
     transition: .3s all ease;
@@ -190,27 +193,26 @@ body::-webkit-scrollbar {
     left: 3%;
     width: 50%;
     max-width: 612px;
-    height: 466px;
+    /* height: 466px; */
     text-transform: uppercase;
 }
 
 
 .titulo{
     /* font-size: 64px; */
-    font-size: 54px;
-    font-weight: 700;
-    font-style: normal;
+    font-size: 36px;
+    /* font-weight: 700; */
+    /* font-style: normal; */
     /* line-height: 60px;  */
-    line-height: 30px;
+    /* line-height: 30px; */
     margin-bottom: 15px;
     color: white;
     font-family: sans-serif;
 }
 
 .bold{
-    /* font-size: 85px; */
-    font-size: 55px;
-    line-height: 95px;
+    font-size: 43px;
+    line-height: 50px;
     font-family: sans-serif;
 }
 
@@ -225,7 +227,7 @@ body::-webkit-scrollbar {
     /* margin-top: 15px;
     margin-bottom: 15px; */
     margin: 15px 0;
-    font-size: 21px;
+    /* font-size: 21px; */
     font-weight: 400;
     font-style: normal;
     line-height: 30px;
@@ -238,13 +240,13 @@ body::-webkit-scrollbar {
 .cont-btn{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 413px;
-    height: 138px;
+    /* align-items: center; */
+   /* width: 413px; */
+    /* height: 138px; */
 }
 
 .btn-rojo{
-    padding: 10px 20px;
+    padding: 10px 0;
     background-color: #DE0039;
     color: white;
     text-decoration: none;
@@ -253,7 +255,7 @@ body::-webkit-scrollbar {
     /* display: inline-block; */
     margin-bottom: 10px;
     width: 413px;
-    height: 65px;
+    height: 51px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -261,7 +263,7 @@ body::-webkit-scrollbar {
 }
 
 .btn-blanco{
-    padding: 10px 20px;
+    padding: 10px 0;
     background-color: white;
     color: #DE0039;
     text-decoration: none;
@@ -270,7 +272,7 @@ body::-webkit-scrollbar {
     /* display: inline-block;
     margin-bottom: 10px; */
     width: 413px;
-    height: 65px;
+    height: 51px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,6 +285,7 @@ body::-webkit-scrollbar {
 .part-2{
     display: block;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .cars{
@@ -1149,8 +1152,24 @@ nav.menu:hover div.menu-text{
 }
 
 /* Media Query*/
+@media(max-width:1440px){
+    .cont-txt{
+        position: absolute;
+        top: 14%;
+        left: 3%;
+        width: 40%;
+        max-width: 612px;
+    } 
+}
 
 @media(max-width:1280px){
+    .cont-txt{
+        position: absolute;
+        top: 10%;
+        left: 3%;
+        width: 40%;
+        max-width: 612px;
+    }
    #parte5 iframe {
         width: 1000px;
         height: 500px;
@@ -1158,6 +1177,28 @@ nav.menu:hover div.menu-text{
 }
 
 @media(max-width:990px){
+    /*Banner*/
+    @media(max-width:990px) {
+      .cont-txt{
+        position: absolute;
+        top: 8%;
+        left: 3%;
+        width: 40%;
+        max-width: 612px;
+    }
+    .titulo {
+        font-size: 40px;
+    }
+    .bold {
+        font-size: 46px;
+        line-height: 46px;
+    }
+    .btn-blanco, .btn-rojo{
+        width: 100%;
+    }
+    }
+
+
   /*  .body{
         
     }
@@ -1215,4 +1256,14 @@ nav.menu:hover div.menu-text{
     .sup-1, .sup-2 {
         width: auto;
     }
+}
+
+@media(max-width:768px){
+    .cont-txt{
+        position: absolute;
+        top: 8%;
+        left: 3%;
+        width: 40%;
+        max-width: 612px;
+    } 
 }
