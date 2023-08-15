@@ -753,7 +753,7 @@ div.img_box:hover img.img_box_1{
     height: 720px;
     /* background-color: #DE0039; */
     margin-top: 10px;
-    margin-bottom: 160px;
+    margin-bottom: 60px;
 }
 
 .caja-6{
@@ -1227,6 +1227,10 @@ nav.menu:hover div.menu-text{
         width: 720px;
         height: 300px;
     }
+    .txt-parraf {
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
     
     /*footer*/
     .caja-7 {
@@ -1254,17 +1258,36 @@ nav.menu:hover div.menu-text{
 @media(max-width:768px){
     .cont-txt{
         position: absolute;
-        top: 8%;
+        top: 15%;
         left: 3%;
-        width: 40%;
-        max-width: 612px;
+        width: 41%;
+        max-width: 315px;
     } 
-
+    .titulo {
+        font-size: 27px;
+        margin-bottom: 0;
+    }
+    .bold {
+        font-size: 30px;
+    }
     .caja-3 {
         flex-direction: column;
     }
     .caja-4 {
     /* display: flex; */
     flex-wrap: wrap;
+    padding-bottom: 0;
+    }
+    .title-4 {
+        font-size: 30px;
+    }
+    .text_img {
+        bottom: 11%;
+    }
+    .txt-parraf {
+        line-height: 26px;
+    }
+    .part-5 {
+        margin: 0 0 60px 0;
     }
 }
