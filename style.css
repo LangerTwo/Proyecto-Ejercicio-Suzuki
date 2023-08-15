@@ -528,7 +528,7 @@
 
 .part-3{
    /* background-color: aqua;*/
-    height: 500px;
+    /* height: 500px; */
     margin: 48px auto 70px auto;
 }
 
@@ -636,7 +636,7 @@
     margin:10px;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    /* width: 30%; */
     /* height: 400px; */
     overflow: hidden;
 }
@@ -680,7 +680,7 @@ div.img_box:hover img.img_box_1{
    border-bottom:1px solid;
    position: relative;
    /* top: -160%; */
-   font-size: 40px;
+   font-size: 30px;
     transition: 300ms;
     min-width: 240px;
     margin: 0 auto;
@@ -1259,4 +1259,12 @@ nav.menu:hover div.menu-text{
         width: 40%;
         max-width: 612px;
     } 
+
+    .caja-3 {
+        flex-direction: column;
+    }
+    .caja-4 {
+    /* display: flex; */
+    flex-wrap: wrap;
+    }
 }
