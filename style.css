@@ -31,7 +31,13 @@
     color: #000;
 }
 .nav-item {
-    width: 100px;
+    /* width: 100%; */
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-bottom: 1px solid black;
 }
 .promo{
     color: #DE0039;
@@ -74,6 +80,11 @@
     order: 1;
     height: 80px;
     align-items: center;
+}
+.nav-down{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .logo{
     padding: 20px;
@@ -141,7 +152,7 @@
         background-color: transparent;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 40px;
         margin: 0;
     }
     .nav-menu {
@@ -149,6 +160,9 @@
         display: flex;
         gap: 2rem;
         flex-direction: row;
+    }
+    .nav-item{
+        border-bottom: none;
     }
     .nav-icon{
         margin: 0;
@@ -159,6 +173,11 @@
     }
     .nav-containt{
         order: 2;
+    }
+    .nav-down{
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
     .logo{
         padding: 20px;
@@ -874,7 +893,7 @@ div.img_box:hover img.img_box_1{
 .txt-parraf{
     text-align:center;
     font-size:30px;
-    line-height:20px;
+    line-height:25px;
     color:#000;
     margin-bottom:48px;
     font-family: sans-serif;  
@@ -1319,7 +1338,7 @@ nav.menu:hover div.menu-text{
 @media(max-width:1280px){
     .cont-txt{
         position: absolute;
-        top: 10%;
+        top: 14%;
         left: 3%;
         width: 40%;
         max-width: 612px;
@@ -1405,7 +1424,7 @@ nav.menu:hover div.menu-text{
 @media (max-width:865px){
     .cont-txt{
         position: absolute;
-        top: 8%;
+        top: 9%;
         left: 3%;
         width: 41%;
         max-width: 315px;
@@ -1422,17 +1441,23 @@ nav.menu:hover div.menu-text{
 @media(max-width:768px){
     .cont-txt{
         position: absolute;
-        top: 8%;
+        top: 7%;
         left: 3%;
         width: 41%;
         max-width: 315px;
     } 
     .titulo {
-        font-size: 27px;
+        font-size: 24px;
         margin-bottom: 0;
     }
     .bold {
-        font-size: 28px;
+        font-size: 25px;
+    }
+    .txtpf {
+        margin: 5px 0;
+    }
+    .btn-blanco, .btn-rojo {
+        height: 40px;
     }
     .titul {
         font-size: 34px;
@@ -1489,5 +1514,35 @@ nav.menu:hover div.menu-text{
     }
     .menu {
         display: none;
+    }
+}
+
+@media (max-width:425px) {
+    .cont-txt{
+        position: absolute;
+        top: 7%;
+        left: 3%;
+        width: 41%;
+        max-width: 315px;
+    } 
+    .titulo {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .bold {
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .txtpf {
+        font-size: 11px;
+        margin: 0;
+    }
+    .btn-blanco {
+        font-size: 10px;
+        height: 29px;
+    }
+    .btn-rojo {
+        font-size: 10px;
+        height: 29px;
     }
 }
