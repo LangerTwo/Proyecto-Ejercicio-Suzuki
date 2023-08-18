@@ -43,7 +43,8 @@
     flex-direction: column;
 }
 .nav-icon {
-    margin-top: 30px;
+    order: 3;
+    /* margin-top: 30px; */
 }
 .header {
     background-color: #fff;
@@ -52,7 +53,7 @@
     top: 0;
     width: 100%;
     z-index: 1080;
-    height: 80px;
+    /* height: 80px; */
 }
 .nav {
     width: 100%;
@@ -62,9 +63,19 @@
     overflow: hidden;
     max-height: 0;
     transition: max-height .5s ease-out;
-    margin-top: 30px;
+    margin-top: 79px;
 }
-
+.nav-logo{
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+    height: 80px;
+    align-items: center;
+}
+.logo{
+    padding: 20px;
+    order: 2;
+}
 .hamb {
     cursor: pointer;
     float: right;
@@ -114,10 +125,10 @@
 }
 
 @media (min-width:900px) {
-    .header{
+    /* .header{
         display: flex;
         justify-content: space-between;
-    }
+    } */
     .nav{
         max-height: none;
         top: 0;
@@ -139,8 +150,12 @@
     .nav-icon{
         margin: 0;
     }
-    .nav-logo{
-
+    .nav-containt{
+        order: 2;
+    }
+    .logo{
+        padding: 20px;
+        order: 1;
     }
     .menu li {
         float: left;
@@ -1311,17 +1326,17 @@ nav.menu:hover div.menu-text{
 @media(max-width:990px){
     .cont-txt{
         position: absolute;
-        top: 7%;
+        top: 9%;
         left: 3%;
         width: 40%;
         max-width: 612px;
     }
     .titulo {
-        font-size: 40px;
+        font-size: 34px;
     }
     .bold {
-        font-size: 46px;
-        line-height: 46px;
+        font-size: 34px;
+        line-height: 32px;
     }
     .btn-blanco, .btn-rojo{
         width: 100%;
