@@ -1229,6 +1229,8 @@ div.img_box:hover img.img_box_1{
 .menu-hiden{
     list-style: none;
     max-width: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 nav.menu:hover ul.menu-hiden {
@@ -1246,7 +1248,7 @@ nav.menu:hover div.menu-text{
     position: relative;
     width: 70px;
     height: 70px;
-    /* background-color: white; */
+    background-color: white;
     display: grid;
     /* place-content: center; */
     text-align: center;
