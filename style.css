@@ -1528,11 +1528,23 @@ nav.menu:hover div.menu-text{
     .link_foot {
         margin-left: 100px;
     }
+    .foot-info {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .foot_link {
         justify-content: flex-start;
     }
     .menu {
         display: none;
+    }
+}
+
+@media (max-width:591px) {
+    .link_foot {
+        margin-left: 0px;
+    }
+    .foot-info {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -1563,6 +1575,14 @@ nav.menu:hover div.menu-text{
     .btn-rojo {
         font-size: 10px;
         height: 29px;
+    }
+    .foot_link {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-list {
+        padding: 10px 0;
     }
 }
 
