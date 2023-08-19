@@ -1359,7 +1359,7 @@ nav.menu:hover div.menu-text{
 @media(max-width:990px){
     .cont-txt{
         position: absolute;
-        top: 9%;
+        top: 12%;
         left: 3%;
         width: 40%;
         max-width: 612px;
@@ -1431,7 +1431,7 @@ nav.menu:hover div.menu-text{
 @media (max-width:865px){
     .cont-txt{
         position: absolute;
-        top: 9%;
+        top: 12%;
         left: 3%;
         width: 41%;
         max-width: 315px;
@@ -1448,23 +1448,28 @@ nav.menu:hover div.menu-text{
 @media(max-width:768px){
     .cont-txt{
         position: absolute;
-        top: 7%;
+        top: 14%;
         left: 3%;
         width: 41%;
         max-width: 315px;
     } 
     .titulo {
-        font-size: 24px;
+        font-size: 17px;
         margin-bottom: 0;
     }
     .bold {
-        font-size: 25px;
+        font-size: 18px;
+        line-height: 16px;
     }
     .txtpf {
         margin: 5px 0;
+        font-size: 12px;
+        line-height: 10px;
     }
     .btn-blanco, .btn-rojo {
-        height: 40px;
+        height: 25px;
+        font-size: 13px;
+        width: 150px;
     }
     .titul {
         font-size: 34px;
@@ -1553,3 +1558,33 @@ nav.menu:hover div.menu-text{
         height: 29px;
     }
 }
+
+/* @media (max-width:375px) {
+    .cont-txt{
+        position: absolute;
+        top: 9%;
+        left: 3%;
+        width: 41%;
+        max-width: 315px;
+    } 
+    .titulo {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .bold {
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .txtpf {
+        font-size: 1px;
+        margin: 0;
+    }
+    .btn-blanco {
+        font-size: 10px;
+        height: 29px;
+    }
+    .btn-rojo {
+        font-size: 10px;
+        height: 29px;
+    }
+} */
