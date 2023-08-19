@@ -37,7 +37,10 @@
     font-size: 14px;
     font-weight: bold;
     font-family: sans-serif;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #D2D1D1;
+    padding: 0 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .promo{
     color: #DE0039;
@@ -45,7 +48,7 @@
 .nav-menu {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    /* gap: 2rem; */
     flex-direction: column;
 }
 .nav-icon{
@@ -68,7 +71,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: #fff;
+    background-color: #f4f4f4;;
     overflow: hidden;
     max-height: 0;
     transition: max-height .5s ease-out;
@@ -85,6 +88,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: space-between;
 }
 .logo{
     padding: 20px;
@@ -138,7 +142,7 @@
     top: 0;
 }
 
-@media (min-width:900px) {
+@media (min-width:1000px) {
     /* .header{
         display: flex;
         justify-content: space-between;
@@ -163,6 +167,7 @@
     }
     .nav-item{
         border-bottom: none;
+        padding: 0;
     }
     .nav-icon{
         margin: 0;
