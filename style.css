@@ -555,15 +555,23 @@
 }
 
 .car-modelo{
-    /* width: 100%;
-    height: 563px; */
-   /* background-color:#DE0039; */
+    position: relative;
+    width: 100%;
 }
 
 .modelo-car{
     display: block;
     width: 100%;
     padding-top: 20px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+.img-fondo {
+    z-index: 2;
+    position: relative;
+    display: block;
+    width: 100%;
 }
 
 .car-precio{
@@ -1388,6 +1396,11 @@ nav.menu:hover div.menu-text{
     .info-car {
         flex-direction: column-reverse;
         align-items: center;
+        gap: 4rem;
+    }
+    .modelo-car {
+        padding-top: 0;
+        margin-top: 50px;
     }
     .detalle {
         display: flex;
