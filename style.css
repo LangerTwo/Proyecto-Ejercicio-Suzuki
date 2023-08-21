@@ -743,7 +743,7 @@
 
 .content {
     width: 270px;
-    height: 233px;
+    /* height: 233px; */
 }
 
 .title_icon{
@@ -1703,6 +1703,62 @@ nav.menu:hover div.menu-text{
         line-height: 54px;
         font-family: sans-serif;
         font-weight: bold;
+    }
+    .title-3 {
+        margin-bottom: 30px;
+    }
+    .titulo-3 {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 0 24px;
+    }
+    .box1 {
+        display: flex;
+        margin-bottom: 46px;
+        padding-left: 0;
+    }
+    .icon_icon-1 {
+        width: 48px;
+        height: 48px
+    }
+    .content {
+        padding-left: 27px;
+        /* height: 233px; */
+        text-align: left;
+    }
+    .title_icon {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    .icon_paragraph {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    .icon_btn {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .box4 {
+        margin-bottom: 0;
+    }
+    .part-3 {
+        margin-bottom: 48px;
+    }
+    .title-4 {
+        font-size: 20px;
+        margin-bottom: -2rem;
+    }
+    .text_img {
+        bottom: 16%;
+        max-width: 200px;
+    }
+    .title-h3 {
+        font-size: 20px;
+        min-width: 0;
     }
     .foot_link {
         gap: 10px;
