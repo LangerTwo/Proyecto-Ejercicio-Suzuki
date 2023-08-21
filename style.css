@@ -989,8 +989,9 @@ div.img_box:hover img.img_box_1{
 }
 
 .txt-card{
-    margin:20px 30px 24px;
+    /* margin:20px 30px 24px; */
     padding:16px;
+    margin: 24px;
  }
 
  .card-txt{
@@ -1006,8 +1007,8 @@ div.img_box:hover img.img_box_1{
  }
 
  .btn-card{
-    font-size:20px;
-    line-height:24px;
+    font-size:25px;
+    line-height:25px;
     text-align:center;
     text-transform:uppercase;
     text-decoration:none;
@@ -1364,6 +1365,14 @@ nav.menu:hover div.menu-text{
         font-size: 32px;
         line-height: 32px;
     }
+    .card-txt {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .btn-card {
+        font-size: 20px;
+        line-height: 23px;
+    }
 }
    
 @media(max-width:990px){
@@ -1533,6 +1542,17 @@ nav.menu:hover div.menu-text{
         font-size: 18px;
         line-height: 15px;
     }
+    .txt-card {
+        padding: 0;
+    }
+    .card-txt {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .btn-card {
+        font-size: 20px;
+        line-height: 23px;
+    }
     .link_foot {
         margin-left: 100px;
     }
@@ -1554,6 +1574,14 @@ nav.menu:hover div.menu-text{
         font-size: 17px;
         line-height: 16px;
     }
+    .card-txt {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .btn-card {
+        font-size: 17px;
+        line-height: 23px;
+    }
 }
 
 @media (max-width:591px) {
@@ -1566,6 +1594,14 @@ nav.menu:hover div.menu-text{
     .foot-info {
         grid-template-columns: 1fr 1fr;
     }
+    .card-txt {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .btn-card {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 @media (max-width:520px) {
@@ -1577,6 +1613,18 @@ nav.menu:hover div.menu-text{
         font-size: 11px;
         width: 150px;
     }
+    .card-txt {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .btn-card {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .arrow-img {
+        margin-right: 5px;
+        height: 16px;
+    }
 }
 
 @media (max-width:448px) {
@@ -1586,6 +1634,17 @@ nav.menu:hover div.menu-text{
     .bold {
         font-size: 17px;
         line-height: 16px;
+    }
+    .txt-card {
+        margin: 18px;
+    }
+    .card-txt {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .btn-card {
+        font-size: 11px;
+        line-height: 18px;
     }
 }
 
