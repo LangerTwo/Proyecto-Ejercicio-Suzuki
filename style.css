@@ -1760,6 +1760,37 @@ nav.menu:hover div.menu-text{
         font-size: 20px;
         min-width: 0;
     }
+    .titulo-5 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    #parte5 iframe {
+        width: 320px;
+        height: 140px;
+    }
+    .titulo-6 {
+        font-size: 18px;
+        line-height: 21px;
+        max-width: 272px;
+        margin: 0 auto;
+    }
+    .txt-6 {
+        font-size: 14px;
+        line-height: 16px;
+        max-width: 229px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+    .box-card {
+        justify-content: normal;
+    }
+    .caja-6 {
+        padding-left: 15px;
+    }
+    .txt-parraf {
+        line-height: 18px;
+        font-size: 18px;
+    }
     .foot_link {
         gap: 10px;
         flex-direction: column;
