@@ -1453,6 +1453,11 @@ nav.menu:hover div.menu-text{
 }
 
 @media (max-width:870px) {
+    .titul {
+        font-size: 35px;
+        line-height: 45px;
+        font-weight: bold;
+    }
     .car-btn-1, .car-btn-2 {
         font-family: sans-serif;
         font-weight: 900;
@@ -1524,6 +1529,13 @@ nav.menu:hover div.menu-text{
     }
     .txt-parraf {
         font-size: 20px;
+    }
+    .titulo-6{
+        font-size: 30px;
+        line-height: 23px;
+    }
+    .txt-6 {
+        font-size: 23px;
     }
 }
    
