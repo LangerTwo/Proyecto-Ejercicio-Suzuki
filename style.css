@@ -902,7 +902,7 @@ div.img_box:hover img.img_box_1{
     text-align:center;
     font-size:30px;
     line-height:25px;
-    color:#000;
+    color:#262626;;
     margin-bottom:48px;
     font-family: sans-serif;  
 }
@@ -1450,7 +1450,82 @@ nav.menu:hover div.menu-text{
         width: auto;
     }
 
+}
+
+@media (max-width:870px) {
+    .car-btn-1, .car-btn-2 {
+        font-family: sans-serif;
+        font-weight: 900;
     }
+    .modelo-car {
+        width: 100%;
+        padding-top: 0;
+        margin-top: 18px;
+    }
+    .detalle-info {
+        border-bottom: 1px solid;
+    }
+    .car-precio {
+        width: fit-content;
+        display: flex;
+        padding: 0 5%;
+        padding-top: 14px;
+        gap: 1rem;
+        align-items: center;
+    }
+    .parf {
+        font-size: 26px;
+        margin: 0;
+
+    }
+    .precio {
+        font-size: 45px;
+        line-height: 54px;
+    }
+    .car-color {
+            /* width: 0;*/
+    }
+    .box1 {
+        display: flex;
+        margin-bottom: 46px;
+        padding-left: 0;
+    }
+    .caja-3 {
+        flex-direction: column;
+    }
+    .icon_icon-1 {
+        width: 48px;
+        height: 48px;
+    }
+    .content {
+        padding-left: 27px;
+        text-align: left;
+    }
+    .title_icon {   
+        font-size: 17px; 
+        line-height: 20px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+    .icon_paragraph {      
+        font-size: 16px;       
+        line-height: 18px;
+        text-align: left;
+        margin-bottom: 18px;
+        font-family: sans-serif;
+    }
+    .icon_btn{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .titulo-5 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .txt-parraf {
+        font-size: 20px;
+    }
+}
    
 @media (max-width:865px){
     .cont-txt{
