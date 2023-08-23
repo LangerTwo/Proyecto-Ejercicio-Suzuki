@@ -1949,6 +1949,24 @@ nav.menu:hover div.menu-text{
     .foot-list {
         padding: 10px 0;
     }
+    .foot-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .box-foot {
+        width: 100%;
+    }
+    .title-suv {
+        border-bottom: 1px solid;
+        padding: 18px;
+        margin-bottom: 0;
+    }
+    .foot-li {
+        margin: 0;
+        border-bottom: 1px solid;
+        padding: 18px;
+    }
 }
 
 /* @media (max-width:375px) {
