@@ -481,8 +481,8 @@
 
             <div class="foot-info">
                 <div class="box-foot">
-                    <h2 class="title-suv">Suvs</h2>
-                    <ul class="foot-suv">
+                    <h2 class="title-suv acordionfooter">Suvs</h2>
+                    <ul class="foot-suv panelfooter">
                         <li class="foot-li"><a href="" class="link-suvs"></a>Vitara 4x2</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>Vitara 4x4</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>Vitara Turbo</li>
@@ -491,8 +491,8 @@
                 </div>
 
                 <div class="box-foot">
-                    <h2 class="title-suv">Compactos y sedanes</h2>
-                    <ul class="foot-suv">
+                    <h2 class="title-suv acordionfooter">Compactos y sedanes</h2>
+                    <ul class="foot-suv panelfooter">
                         <li class="foot-li"><a href="" class="link-suvs"></a>Alto 800</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>S-Presso</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>Swift Revolution</li>
@@ -503,16 +503,16 @@
                 </div>
 
                 <div class="box-foot">
-                    <h2 class="title-suv">7 Pasajeros y paneles</h2>
-                    <ul class="foot-suv">
+                    <h2 class="title-suv acordionfooter">7 Pasajeros y paneles</h2>
+                    <ul class="foot-suv panelfooter">
                         <li class="foot-li"><a href="" class="link-suvs"></a>XL7</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>APV Panel</li>
                     </ul>
                 </div>
 
                 <div class="box-foot">
-                    <h2 class="title-suv">Posventa</h2>
-                    <ul class="foot-suv">
+                    <h2 class="title-suv acordionfooter">Posventa</h2>
+                    <ul class="foot-suv panelfooter">
                         <li class="foot-li"><a href="" class="link-suvs"></a>Campaña de Seguridad</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>Carroceria y pintura</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>Citas Taller</li>
@@ -522,8 +522,8 @@
                 </div>
 
                 <div class="box-foot">
-                    <h2 class="title-suv">Sucursales</h2>
-                    <ul class="foot-suv">
+                    <h2 class="title-suv acordionfooter">Sucursales</h2>
+                    <ul class="foot-suv panelfooter">
                         <li class="foot-li"><a href="" class="link-suvs"></a>Agencia Uruca, General Cañas</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>Agencia Heredia</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>Agenzia Zapote</li>
@@ -536,8 +536,8 @@
                 </div> 
                 
                 <div class="box-foot">
-                    <h2 class="title-suv">Ayuda</h2>
-                    <ul class="foot-suv">
+                    <h2 class="title-suv acordionfooter">Ayuda</h2>
+                    <ul class="foot-suv panelfooter">
                         <li class="foot-li"><a href="" class="link-suvs"></a>Trabajá con Suzuki</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>Cotizá Tu Suzuki</li>
                         <li class="foot-li"><a href="" class="link-suvs"></a>Test Drive</li>
@@ -562,5 +562,22 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        var acc = document.getElementsByClassName("acordionfooter")
+        var i;
+
+        for(i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+                var panelfooter = this.nextElementSibling;
+                if (panelfooter.style.maxHeight) {
+                    panelfooter.style.maxHeight = null;
+                } else {
+                    panelfooter.style.maxHeight = panelfooter.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 </html>

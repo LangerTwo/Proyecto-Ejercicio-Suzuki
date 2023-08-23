@@ -1640,17 +1640,62 @@ nav.menu:hover div.menu-text{
         font-size: 20px;
         line-height: 23px;
     }
-    .link_foot {
-        margin-left: 100px;
-    }
-    .foot-info {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .foot_link {
-        justify-content: flex-start;
-    }
     .menu {
         display: none;
+    }
+    .foot_link {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-list {
+        padding: 10px 0;
+    }
+    .foot-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 35px;
+    }
+    .box-foot {
+        width: 100%;
+    }
+    .title-suv {
+        border-bottom: 1px solid;
+        font-size: 15px;
+        padding: 18px;
+        margin-bottom: 0;
+    }
+    .foot-li {
+        margin: 0;
+        border-bottom: 1px solid;
+        padding: 18px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .text-sup {
+        text-align: center;
+    }
+    footer .acordionfooter{
+        cursor: pointer;
+        /* padding: 18px; */
+        width: 100%;transition:  0.4s;
+        border-top: 1px solid #ccc;
+    }
+    footer .acordionfooter::after {
+        content: '\002B';
+        font-size: 24px;
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-top: -5px;
+    }
+    footer .panelfooter {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background: #f6f6f6;
     }
 }
 @media (max-width:622px) {
@@ -1953,12 +1998,14 @@ nav.menu:hover div.menu-text{
         display: flex;
         flex-direction: column;
         padding: 0;
+        margin-top: 35px;
     }
     .box-foot {
         width: 100%;
     }
     .title-suv {
         border-bottom: 1px solid;
+        font-size: 15px;
         padding: 18px;
         margin-bottom: 0;
     }
@@ -1966,6 +2013,32 @@ nav.menu:hover div.menu-text{
         margin: 0;
         border-bottom: 1px solid;
         padding: 18px;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .text-sup {
+        text-align: center;
+    }
+    footer .acordionfooter{
+        cursor: pointer;
+        /* padding: 18px; */
+        width: 100%;transition:  0.4s;
+        border-top: 1px solid #ccc;
+    }
+    footer .acordionfooter::after {
+        content: '\002B';
+        font-size: 24px;
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-top: -5px;
+    }
+    footer .panelfooter {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background: #f6f6f6;
     }
 }
 
