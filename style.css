@@ -645,6 +645,7 @@
     align-items: center;
     gap: 8px;
     padding-top: 10px;
+    justify-content: center;
 }
 
 
@@ -695,6 +696,7 @@
     font-size: 16px;
     line-height: 19px;
     font-family: 'RobotoRegular';
+    text-align: center;
 }
 
 
@@ -1750,12 +1752,12 @@ nav.menu:hover div.menu-text{
         line-height: 14px;
     }
     .btn-card {
-        font-size: 12px;
+        font-size: 9px;
         line-height: 18px;
     }
     .arrow-img {
         margin-right: 5px;
-        height: 16px;
+        height: 14px;
     }
 }
 
