@@ -712,7 +712,7 @@
 .caja-3{
     display: flex;
     justify-content:space-between;
-    /* align-items:center; */
+    align-items:center;
     max-width:1211px;
     margin:0 auto;
 }
@@ -2048,4 +2048,5 @@ nav.menu:hover div.menu-text{
 li.nav-item:hover {
     transition: all .1s;
     border-bottom: 3px solid #DE0039;
+
 }
