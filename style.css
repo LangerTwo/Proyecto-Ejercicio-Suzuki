@@ -305,6 +305,7 @@
 .icon-lupa{
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
 .li-icon{
@@ -711,7 +712,7 @@
 .caja-3{
     display: flex;
     justify-content:space-between;
-    align-items:center;
+    /* align-items:center; */
     max-width:1211px;
     margin:0 auto;
 }
@@ -2044,32 +2045,7 @@ nav.menu:hover div.menu-text{
     }
 }
 
-/* @media (max-width:375px) {
-    .cont-txt{
-        position: absolute;
-        top: 9%;
-        left: 3%;
-        width: 41%;
-        max-width: 315px;
-    } 
-    .titulo {
-        font-size: 12px;
-        margin-bottom: 5px;
-    }
-    .bold {
-        font-size: 12px;
-        line-height: 10px;
-    }
-    .txtpf {
-        font-size: 1px;
-        margin: 0;
-    }
-    .btn-blanco {
-        font-size: 10px;
-        height: 29px;
-    }
-    .btn-rojo {
-        font-size: 10px;
-        height: 29px;
-    }
-} */
+li.nav-item:hover {
+    transition: all .1s;
+    border-bottom: 3px solid #DE0039;
+}
