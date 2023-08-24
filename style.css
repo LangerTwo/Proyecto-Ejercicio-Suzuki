@@ -1954,8 +1954,8 @@ nav.menu:hover div.menu-text{
         min-width: 0;
     }
     .titulo-5 {
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 30px;
     }
     #parte5 iframe {
         width: 320px;
@@ -1986,7 +1986,7 @@ nav.menu:hover div.menu-text{
     }
     .txt-parraf {
         line-height: 18px;
-        font-size: 18px;
+        font-size: 14px;
     }
     .foot_link {
         gap: 10px;
