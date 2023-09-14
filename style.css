@@ -1786,6 +1786,13 @@ nav.menu:hover div.menu-text{
 }
 
 @media (max-width:426px) {
+    /* .menu {
+        display: block;
+        bottom: 0
+    }
+    .menu-text {
+        display: ;
+    } */
     .part-1 {
         height: 545px;
         background: darkgray;
@@ -2060,3 +2067,4 @@ nav.nav > figure:hover{
 /* .nav-icon:hover {
     border: 1px solid #DE0039;
 } */
+
