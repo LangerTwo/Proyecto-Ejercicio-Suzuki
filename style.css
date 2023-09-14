@@ -100,7 +100,10 @@
     padding: 20px;
     order: 2;
 }
-
+li.nav-item .icon-down:hover {
+    cursor: pointer;
+    color: #C60C3E;
+}
 
 /* Creando menu desplegable */
 .hamb-icon {
