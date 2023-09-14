@@ -75,10 +75,13 @@
     height: 100%;
     position: fixed;
     background-color: #f4f4f4;;
-    overflow: hidden;
+    overflow: hidden;  
+    transition: max-height .5s ease-out;
+    margin-top: 30px;
+}
+.altura {
     max-height: 0;
     transition: max-height .5s ease-out;
-    margin-top: 34px;
 }
 .nav-logo{
     display: flex;
@@ -108,7 +111,9 @@
 .nav-containt figure:hover {
    cursor: pointer;
 }
-
+.close-icon {
+    padding-left: 24px;
+}
 
 
 /*.hamb {
@@ -167,6 +172,10 @@
         padding-left: 24px;
         display: none;
     }
+    .close-icon {
+        display: none;
+        padding-left: 24px;
+    }
     .nav{
         max-height: none;
         top: 0;
@@ -216,8 +225,9 @@
         background-color: transparent;
         color: #000;
     }
-    .hamb {
-        display: none;
+    ul.nav-menu > li.nav-item > .link-item:hover {
+        border-bottom: 5px solid #BF0010;
+        color: #C60C3E;
     }
 }
 
@@ -2074,10 +2084,6 @@ nav.menu:hover div.menu-text{
     }
 }
 
-ul.nav-menu > li.nav-item > .link-item:hover {
-    border-bottom: 5px solid #BF0010;
-    color: #C60C3E;
-}
 
 nav.nav > figure:hover{
     border: 2px solid #BF0010;
