@@ -44,6 +44,14 @@
     padding: 0 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    cursor: pointer;
+}
+ul.nav-menu > li.nav-item a.link-item:hover {
+    color: #DE0039;
+}
+li.nav-item a.link-item > div.icon-down:hover {
+    filter: invert(13%) sepia(73%) saturate(7423%) hue-rotate(339deg) brightness(85%) contrast(106%);
+    rotate: 180deg;
 }
 .promo{
     color: #DE0039;
@@ -198,6 +206,10 @@ li.nav-item .icon-down:hover {
         flex-direction: row;
         align-items: center;
     }
+    li.nav-item > a:hover {
+        color: #C60C3E;
+        border-bottom: 5px solid #BF0010;
+    }
     .nav-item{
         border-bottom: none;
         padding: 0;
@@ -227,10 +239,6 @@ li.nav-item .icon-down:hover {
     .menu a:hover {
         background-color: transparent;
         color: #000;
-    }
-    ul.nav-menu > li.nav-item > .link-item:hover {
-        border-bottom: 5px solid #BF0010;
-        color: #C60C3E;
     }
 }
 
