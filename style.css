@@ -2098,6 +2098,7 @@ nav.nav > figure:hover{
     width: 100%;
     max-width: 120px;
     border-top: 4px solid #BF0010;
+    display: none;/* quitar para que aparezca el menu */
 }
 .lista-desplegable{
     display: flex;
@@ -2117,3 +2118,6 @@ nav.nav > figure:hover{
     text-transform: uppercase;
     padding: 0;
 }
+/* .nav-item .submenu:hover {
+    display: block;
+} */
