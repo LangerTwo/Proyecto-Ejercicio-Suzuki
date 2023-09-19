@@ -204,6 +204,9 @@ li.nav-item .icon-down:hover {
         flex-direction: row;
         align-items: center;
     }
+    .nav-menu:nth-child(1) {
+        position: relative;
+    }
     li.nav-item > a:hover {
         color: #C60C3E;
         /* border-bottom: 5px solid #BF0010; */
@@ -238,6 +241,42 @@ li.nav-item .icon-down:hover {
         background-color: transparent;
         color: #000;
     }
+    nav.nav > figure:hover{
+        border: 2px solid #BF0010;
+        border-radius: 8px;
+    }
+    
+    /* Menu desplegable posventa */
+    .submenu {
+        position: fixed;
+        top: 85px;
+        /* left: 0%; */
+        background: #F4F4F4;
+        padding: 16px 8px;
+        width: 100%;
+        max-width: 120px;
+        border-top: 4px solid #BF0010;
+    }
+    .lista-desplegable{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .sub-item {
+        list-style: none;
+        height: 100%;
+    }
+    .sub-link {
+        text-decoration: none;
+        gap: 8px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #666666;
+        text-transform: uppercase;
+        padding: 0;
+    }
+
+  
 }
 
 .cont-logo{
@@ -2081,40 +2120,84 @@ nav.menu:hover div.menu-text{
 }
 
 
-nav.nav > figure:hover{
-    border: 2px solid #BF0010;
-    border-radius: 8px;
-}
 
-/* Menu desplegable posventa*/
-.submenu {
-    position: fixed;
-    top: 85px;
-    /* left: 0%; */
-    background: #F4F4F4;
-    padding: 16px 8px;
-    width: 100%;
-    max-width: 120px;
-    border-top: 4px solid #BF0010;
-}
-.lista-desplegable{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-.sub-item {
-    list-style: none;
-    height: 100%;
-}
-.sub-link {
-    text-decoration: none;
-    gap: 8px;
-    font-size: 13px;
-    line-height: 16px;
-    color: #666666;
-    text-transform: uppercase;
-    padding: 0;
-}
 /* .nav-item .submenu:hover {
     display: block;
 } */
+  /* Menu desplegable Modelos */
+  .submenu-model {
+    position: fixed;
+    width: 100%;
+    height: 720px;
+    background: #F4F4F4;
+    right: 0;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+  .link-butn {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 50px;
+    margin-top: 30px;
+    align-items: center;
+  }
+  .link-butn a {  
+    text-decoration: none;
+    font-size: 16px;
+    color: #666666;
+  }
+  .button-link:hover {
+    color: #C60C3E;
+    border-bottom: 3px solid #C60C3E;
+  }
+/* MODELOS */
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    place-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+.item-grid {
+    width: 300px;
+}
+.container-grid .item-grid {
+    list-style: none;
+}
+.model-info {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.model-info div {
+    display: flex;
+    gap: 20px;
+    height: 20px;
+}
+.model-info div a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 11px;
+    align-items: center;
+    color: #414141;
+}
+.model-info div a:hover {
+    color: #BF0010;
+}
+.model-info h2 {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #414141;
+}
+.model-info h2:hover {
+    color: #C60C3E;
+}
+.model-icon {
+    background-image: url(https://www.suzuki.cr/suzuki/imag/v1/icon/header/ic_stroke.svg);
+    width: 16px;
+    height: 16px;
+}
