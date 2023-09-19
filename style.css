@@ -6,6 +6,9 @@
 .inactive {
     display: none;
 }
+.active {
+    display: block;
+}
 /* body{
     max-width: 1440px;
 } */
