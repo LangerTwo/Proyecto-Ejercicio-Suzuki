@@ -6,6 +6,9 @@
 .inactive {
     display: none;
 }
+.active {
+    display: block;
+}
 /* body{
     max-width: 1440px;
 } */
@@ -44,6 +47,12 @@
     padding: 0 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    cursor: pointer;
+}
+li.nav-item a.link-item:hover > div.icon-down {
+    filter: invert(13%) sepia(73%) saturate(7423%) hue-rotate(339deg) brightness(85%) contrast(106%);
+    rotate: 180deg;
+    color: #DE0039;
 }
 .promo{
     color: #DE0039;
@@ -198,6 +207,13 @@ li.nav-item .icon-down:hover {
         flex-direction: row;
         align-items: center;
     }
+    .nav-menu:nth-child(1) {
+        position: relative;
+    }
+    li.nav-item > a:hover {
+        color: #C60C3E;
+        /* border-bottom: 5px solid #BF0010; */
+    }
     .nav-item{
         border-bottom: none;
         padding: 0;
@@ -215,7 +231,7 @@ li.nav-item .icon-down:hover {
     .nav-down{
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 25px;
     }
     .logo{
         padding: 20px;
@@ -228,10 +244,42 @@ li.nav-item .icon-down:hover {
         background-color: transparent;
         color: #000;
     }
-    ul.nav-menu > li.nav-item > .link-item:hover {
-        border-bottom: 5px solid #BF0010;
-        color: #C60C3E;
+    nav.nav > figure:hover{
+        border: 2px solid #BF0010;
+        border-radius: 8px;
     }
+    
+    /* Menu desplegable posventa */
+    .submenu {
+        position: fixed;
+        top: 85px;
+        /* left: 0%; */
+        background: #F4F4F4;
+        padding: 16px 8px;
+        width: 100%;
+        max-width: 120px;
+        border-top: 4px solid #BF0010;
+    }
+    .lista-desplegable{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .sub-item {
+        list-style: none;
+        height: 100%;
+    }
+    .sub-link {
+        text-decoration: none;
+        gap: 8px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #666666;
+        text-transform: uppercase;
+        padding: 0;
+    }
+
+  
 }
 
 .cont-logo{
@@ -370,10 +418,10 @@ li.nav-item .icon-down:hover {
     top: 6%;
     height: 606px;
 }
-.part-1 {
-        /* height: 545px; */
-    /* background: darkgray;*/
-}
+/* .part-1 {
+        height: 545px; 
+    background: darkgray;
+} */
 
 .con-img{
     position: relative;
@@ -398,7 +446,6 @@ li.nav-item .icon-down:hover {
     /* height: 466px; */
     text-transform: uppercase;
 }
-
 
 .titulo{
     /* font-size: 64px; */
@@ -480,7 +527,6 @@ li.nav-item .icon-down:hover {
     justify-content: center;
     font-family: sans-serif;
 }
-
 
 /*section 2*/
 
@@ -667,14 +713,6 @@ li.nav-item .icon-down:hover {
     font-size: 20px;
 }
 
-/*.car-color{
-    width: 100%;
-     height: 100px;
-    background-color: aqua;
-   margin-top: 20px 0;
-   
-}*/
-
 .car-color ul{
     list-style: none;
     display: flex;
@@ -683,7 +721,6 @@ li.nav-item .icon-down:hover {
     padding-top: 10px;
     justify-content: center;
 }
-
 
 .color1{
     width: 30px;
@@ -734,7 +771,6 @@ li.nav-item .icon-down:hover {
     font-family: 'RobotoRegular';
     text-align: center;
 }
-
 
 /*parte-3*/
 
@@ -883,7 +919,6 @@ div.img_box:hover img.img_box_1{
     outline:none;
     color: white;
 }
-
 
 .title-h3{
     text-transform:uppercase;
@@ -2088,12 +2123,84 @@ nav.menu:hover div.menu-text{
 }
 
 
-nav.nav > figure:hover{
-    border: 2px solid #BF0010;
-    border-radius: 8px;
-}
 
-/* .nav-icon:hover {
-    border: 1px solid #DE0039;
+/* .nav-item .submenu:hover {
+    display: block;
 } */
-
+  /* Menu desplegable Modelos */
+  .submenu-model {
+    position: fixed;
+    width: 100%;
+    height: 720px;
+    background: #F4F4F4;
+    right: 0;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+  .link-butn {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 50px;
+    margin-top: 30px;
+    align-items: center;
+  }
+  .link-butn a {  
+    text-decoration: none;
+    font-size: 16px;
+    color: #666666;
+  }
+  .button-link:hover {
+    color: #C60C3E;
+    border-bottom: 3px solid #C60C3E;
+  }
+/* MODELOS */
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    place-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+.item-grid {
+    width: 300px;
+}
+.container-grid .item-grid {
+    list-style: none;
+}
+.model-info {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.model-info div {
+    display: flex;
+    gap: 20px;
+    height: 20px;
+}
+.model-info div a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 11px;
+    align-items: center;
+    color: #414141;
+}
+.model-info div a:hover {
+    color: #BF0010;
+}
+.model-info h2 {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #414141;
+}
+.model-info h2:hover {
+    color: #C60C3E;
+}
+.model-icon {
+    background-image: url(https://www.suzuki.cr/suzuki/imag/v1/icon/header/ic_stroke.svg);
+    width: 16px;
+    height: 16px;
+}
