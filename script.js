@@ -24,6 +24,8 @@ let listaSuv = document.querySelector('#lista-modelo-2');
 let btnSedanes = document.querySelector('#button-3');
 let btnSiete = document.querySelector('#button-4');
 let btnPaneles = document.querySelector('#button-5');
+let modelosTodos = document.querySelector('#modelo-todos');
+let suvModelos = document.querySelector('#modelos-suv');
 
 
 //.addEventListener('click', );
@@ -41,6 +43,7 @@ btnSuv.addEventListener('click', changeCars2);
 btnSedanes.addEventListener('click', changeCars3);
 btnSiete.addEventListener('click', changeCars4);
 btnPaneles.addEventListener('click', changeCars5);
+
 
 function openMenuMobile() {
     navbarHeight.classList.remove('altura');
@@ -112,9 +115,14 @@ function closeSubModel() {
 // 
 function changeCars1() {
     btnTodos.classList.add('active');
+    modelosTodos.classList.remove('inactive');
+    modelosTodos.classList.add('modelo-lista');
     listaTodos.classList.add('active');
+
     btnSuv.classList.remove('active');
     listaSuv.classList.remove('active');
+    suvModelos.setAttribute('class', 'inactive');
+
     btnSedanes.classList.remove('active');
     btnSiete.classList.remove('active');
 
@@ -123,8 +131,13 @@ function changeCars1() {
 function changeCars2() {
     btnTodos.classList.remove('active');
     listaTodos.classList.remove('active');
+
+    suvModelos.removeAttribute('class', 'inactive');
+    suvModelos.classList.add('modelo-lista');
+    modelosTodos.setAttribute('class', 'inactive');
     btnSuv.classList.add('active');
     listaSuv.classList.add('active');
+
     btnSedanes.classList.remove('active');
     btnSiete.classList.remove('active');
     btnPaneles.classList.remove('active');
@@ -176,20 +189,25 @@ for(i = 0; i < acc.length; i++) {
 
 let modelosSuv = [];
 modelosSuv.push({
-    logo: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006420220526152924/Vitara4x2-395x130.png',
+    logo: './logo/Vitara4x2-395x130.png',
     price: 27.340,
     image: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009520220526152924/blanco.png',
 });
 
 let imgSuv = document.querySelector('#modelo-suv');
-let logoSuv = document.querySelector('.img-info');
+let imgSuv2 = document.querySelector('#modelo-suv2');
+let logoSuv = document.querySelector('#info-suv');
 let precioSuv = document.querySelector('.precio-model');
+let modeloSuvImage = document.querySelector('.modelo-car');
 
-imgSuv.addEventListener('click', openInfoSuv)
+imgSuv.addEventListener('click', openInfoSuv);
+imgSuv.addEventListener('click', changeCars2);
+imgSuv2.addEventListener('click', openInfoSuv)
 
-function openInfoSuv(modelosSuv) {
+function openInfoSuv() {
     
+    logoSuv.setAttribute('src', modelosSuv[0].logo);
+    precioSuv.textContent = modelosSuv[0].price;
+    modeloSuvImage.setAttribute('src', modelosSuv[0].image);
     console.log("here");
-    logoSuv.setAttribute('src', modelosSuv.logo);
-    precioSuv.textContent = modelosSuv.precioSuv;
 }
