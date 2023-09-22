@@ -422,11 +422,30 @@ panelesList.forEach((panel) => {
 
 let todosModelos = [compactosLista, suvLista, pasajerosLista, panelesList];
 
-let arrayTodos =[];
+let arrayTodos = [];
+
+// for (let arr of todosModelos) {
+//     if (arr.length > 0) {
+//         arrayTodos.push(arr[0]);
+//     }
+// }
+
+// for (let arr of todosModelos) {
+//     if (arr.length > 0) {
+//         for (let elemento of arr) {
+//             arrayTodos.push(elemento);
+//         }
+//     }
+// }
 
 for (let arr of todosModelos) {
     if (arr.length > 0) {
-        arrayTodos.push(arr[0]);
+        let shufflerArr = arr.slice();
+        for (let i = shufflerArr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shufflerArr[i], shufflerArr[j], shufflerArr[j], shufflerArr[i]];
+        }
+        arrayTodos = arrayTodos.concat(shufflerArr);
     }
 }
 

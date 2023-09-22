@@ -622,7 +622,7 @@ li.nav-item .icon-down:hover {
 
 .modelo-lista{
    display: flex;   
-   justify-content: center;    
+   justify-content: flex-start;;    
    gap: 15px; 
    overflow: hidden;
 }
