@@ -31,6 +31,11 @@ let compactosModelos = document.querySelector('#modelos-compacto');
 let pasajerosModelos = document.querySelector('#modelos-pasajeros');
 let panelModelos = document.querySelector('#modelos-panel');
 
+let precioModel = document.querySelector('#price-car .precio .precio-model');
+let logoModel = document.querySelector('#logo-car figure img');
+let imagenCar = document.querySelector('.car-modelo figure img');
+
+
 let timer;
 
 //.addEventListener('click', );
@@ -314,10 +319,16 @@ let compactosLista = [
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007520220526165735/2.png',
      logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005020220526165735/Alto-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006520220526165735/BLANCO.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003920220526165735/Alto-395x130.png',
+     precio: '12,950'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006120220526180806/CELERIO.png',
      logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006020220526180806/Celerio-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007820220526180806/BLANCO.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004120220526180806/Celerio-395x130.png',
+     precio: '16,490'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004120220526175358/SPRESSO.png',
@@ -349,6 +360,13 @@ compactosLista.forEach((comap) => {
     let figureDosLi = document.createElement('figure');
     let logoCarLi = document.createElement('img');
     logoCarLi.setAttribute('src', comap.logoMini);
+
+    nuevoLi.addEventListener('click', () => {
+        precioModel.textContent = comap.precio;
+        logoModel.setAttribute('src', comap.logoMax);
+        imagenCar.setAttribute('src', comap.carImage);
+        console.log("here");
+    })
 
     figureLi.appendChild(carImageLi);
     figureDosLi.appendChild(logoCarLi);
@@ -462,6 +480,13 @@ arrayTodos.forEach((todoM) => {
     let figureDosLi = document.createElement('figure');
     let logoCarLi = document.createElement('img');
     logoCarLi.setAttribute('src', todoM.logoMini);
+
+    nuevoLi.addEventListener('click', () => {
+        precioModel.textContent = todoM.precio;
+        logoModel.setAttribute('src', todoM.logoMax);
+        imagenCar.setAttribute('src', todoM.carImage);
+        console.log("here");
+    })
 
     figureLi.appendChild(carImageLi);
     figureDosLi.appendChild(logoCarLi);
