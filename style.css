@@ -647,6 +647,7 @@ li.nav-item .icon-down:hover {
 
 .autos{
     margin-bottom: 20px;
+    overflow-x: auto;
 }
 
 .info-car{

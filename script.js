@@ -141,6 +141,7 @@ function changeCars1() {
 
     btnSedanes.classList.remove('active');
     btnSiete.classList.remove('active');
+    pasajerosModelos.classList.add('inactive');
 
     console.log("Todos");
 }
