@@ -245,8 +245,8 @@ let logoSuv = document.querySelector('#info-suv');
 let precioSuv = document.querySelector('.precio-model');
 let modeloSuvImage = document.querySelector('.modelo-car');
 
-imgSuv.addEventListener('click', openInfoSuv);
-imgSuv.addEventListener('click', changeCars2);
+// imgSuv.addEventListener('click', openInfoSuv);
+// imgSuv.addEventListener('click', changeCars2);
 //imgSuv2.addEventListener('click', openInfoSuv)
 
 function openInfoSuv() {   
@@ -260,27 +260,27 @@ function openInfoSuv() {
 let suvLista = [
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004020220526152924/VITARA-4X2.png',
-     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005020220526165735/Alto-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006320220526152924/Vitara4x2-145x45.png'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000000620220606165654/VITARA-4X4.png',
-     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000005920220606165654/Vitara4x4-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000005920220606165654/Vitara4x4-145x45.png'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004820220526165541/VITARA-TURBO.png',
-     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007120220526165541/Vitara-Turbo-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007120220526165541/Vitara-Turbo-145x45.png'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003620220526130732/JIMNY.png',
-     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005020220526130732/Jimny-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005020220526130732/Jimny-145x45.png'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000007220230309195351/modelo-miniatura.png',
-     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000007120230309195351/logo-pequen_o.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000007120230309195351/logo-pequen_o.png'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005520220526144156/SCROSS.png',
-     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005420220526144156/Scross-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005420220526144156/Scross-145x45.png'
     }
 ];
 
@@ -297,7 +297,7 @@ suvLista.forEach((suv) => {
 
     let figureDosLi = document.createElement('figure');
     let logoCarLi = document.createElement('img');
-    logoCarLi.setAttribute('src', suv.logomini);
+    logoCarLi.setAttribute('src', suv.logoMini);
 
     figureLi.appendChild(carImageLi);
     figureDosLi.appendChild(logoCarLi);
@@ -416,4 +416,38 @@ panelesList.forEach((panel) => {
     nuevoLi.appendChild(figureDosLi);
 
     panelModelos.appendChild(nuevoLi);
+});
+
+// Todos
+
+let todosModelos = [compactosLista, suvLista, pasajerosLista, panelesList];
+
+let arrayTodos =[];
+
+for (let arr of todosModelos) {
+    if (arr.length > 0) {
+        arrayTodos.push(arr[0]);
+    }
+}
+
+arrayTodos.forEach((todoM) => {
+    let nuevoLi = document.createElement('li');
+    nuevoLi.classList.add('lista');
+    
+    let figureLi = document.createElement('figure');
+    let carImageLi = document.createElement('img');
+    carImageLi.classList.add('modelo');
+    carImageLi.setAttribute('src', todoM.car);
+
+    let figureDosLi = document.createElement('figure');
+    let logoCarLi = document.createElement('img');
+    logoCarLi.setAttribute('src', todoM.logoMini);
+
+    figureLi.appendChild(carImageLi);
+    figureDosLi.appendChild(logoCarLi);
+
+    nuevoLi.appendChild(figureLi);
+    nuevoLi.appendChild(figureDosLi);
+
+    modelosTodos.appendChild(nuevoLi);
 });

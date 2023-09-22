@@ -621,12 +621,12 @@ li.nav-item .icon-down:hover {
 
 
 .modelo-lista{
-   display: flex;
-   justify-content: flex-start;
+   display: flex;   
+   justify-content: center;    
    gap: 15px; 
    overflow: hidden;
 }
-.modelo-lista li:nth-child(1){
+.modelo-lista li:nth-child(2){
     opacity: 1;
 }
 .lista{
@@ -1588,9 +1588,9 @@ nav.menu:hover div.menu-text{
         font-size: 45px;
         line-height: 54px;
     }
-    .car-color {
-            /* width: 0;*/
-    }
+    /* .car-color {
+            width: 0;
+    } */
     .box1 {
         display: flex;
         margin-bottom: 46px;
