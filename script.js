@@ -24,9 +24,14 @@ let listaSuv = document.querySelector('#lista-modelo-2');
 let btnSedanes = document.querySelector('#button-3');
 let btnSiete = document.querySelector('#button-4');
 let btnPaneles = document.querySelector('#button-5');
+
 let modelosTodos = document.querySelector('#modelo-todos');
 let suvModelos = document.querySelector('#modelos-suv');
+let compactosModelos = document.querySelector('#modelos-compacto');
+let pasajerosModelos = document.querySelector('#modelos-pasajeros');
+let panelModelos = document.querySelector('#modelos-panel');
 
+let timer;
 
 //.addEventListener('click', );
 iconHamb.addEventListener('click', openMenuMobile);
@@ -70,6 +75,7 @@ function openSubPos() {
 function closeSubPos() {
     subMenuPos.classList.add('inactive');
     console.log("cierra");
+    
 }
 
 // 
@@ -103,16 +109,23 @@ function chageBtn4() {
 }
 
 // 
+
 function openSubModel() {
     subMenuModel.classList.remove('inactive');
     console.log("abre");
-}
-function closeSubModel() {
-    subMenuModel.classList.add('inactive');
-    console.log("cierra");
+    clearTimeout(timer);
+    
 }
 
-// 
+function closeSubModel() { 
+    console.log("cierra");
+    timer = setTimeout(function () {
+        console.log("Mouse fuera del elemento después de un retraso");
+        subMenuModel.classList.add('inactive');
+    }, 100);
+}
+
+// botones cambio de modelos
 function changeCars1() {
     btnTodos.classList.add('active');
     modelosTodos.classList.remove('inactive');
@@ -121,7 +134,10 @@ function changeCars1() {
 
     btnSuv.classList.remove('active');
     listaSuv.classList.remove('active');
+
     suvModelos.setAttribute('class', 'inactive');
+    compactosModelos.setAttribute('class', 'inactive');
+    panelModelos.setAttribute('class', 'inactive');
 
     btnSedanes.classList.remove('active');
     btnSiete.classList.remove('active');
@@ -134,7 +150,11 @@ function changeCars2() {
 
     suvModelos.removeAttribute('class', 'inactive');
     suvModelos.classList.add('modelo-lista');
+
     modelosTodos.setAttribute('class', 'inactive');
+    compactosModelos.setAttribute('class', 'inactive');
+    panelModelos.setAttribute('class', 'inactive');
+
     btnSuv.classList.add('active');
     listaSuv.classList.add('active');
 
@@ -145,6 +165,14 @@ function changeCars2() {
     console.log("suv");
 }
 function changeCars3() {
+    compactosModelos.removeAttribute('class', 'inactive');
+    compactosModelos.classList.add('modelo-lista');
+
+    modelosTodos.setAttribute('class', 'inactive');
+    suvModelos.setAttribute('class', 'inactive');
+    pasajerosModelos.setAttribute('class', 'inactive');
+    panelModelos.setAttribute('class', 'inactive');
+
     btnSedanes.classList.add('active');
     btnTodos.classList.remove('active');
     btnSuv.classList.remove('active');
@@ -154,6 +182,14 @@ function changeCars3() {
     console.log("Compactos y Sedanes");
 }
 function changeCars4() {
+    pasajerosModelos.removeAttribute('class', 'inactive');
+    pasajerosModelos.classList.add('modelo-lista');
+
+    modelosTodos.setAttribute('class', 'inactive');
+    suvModelos.setAttribute('class', 'inactive');
+    compactosModelos.setAttribute('class', 'inactive');
+    panelModelos.setAttribute('class', 'inactive');
+
     btnSiete.classList.add('active');
     btnTodos.classList.remove('active');
     btnSuv.classList.remove('active');
@@ -163,6 +199,14 @@ function changeCars4() {
     console.log("7 Pasajeros");
 }
 function changeCars5() {
+    panelModelos.removeAttribute('class', 'inactive');
+    panelModelos.classList.add('modelo-lista');
+
+    modelosTodos.setAttribute('class', 'inactive');
+    suvModelos.setAttribute('class', 'inactive');
+    compactosModelos.setAttribute('class', 'inactive');
+    pasajerosModelos.setAttribute('class', 'inactive');
+
     btnPaneles.classList.add('active');
     btnSiete.classList.remove('active');
     btnTodos.classList.remove('active');
@@ -187,27 +231,189 @@ for(i = 0; i < acc.length; i++) {
         });
 }
 
-let modelosSuv = [];
-modelosSuv.push({
-    logo: './logo/Vitara4x2-395x130.png',
+let modelosSuv = [
+    { logo: './logo/Vitara4x2-395x130.png',
     price: 27.340,
-    image: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009520220526152924/blanco.png',
-});
+    image: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009520220526152924/blanco.png',}
+];
+// modelosSuv.push();
 
 let imgSuv = document.querySelector('#modelo-suv');
 let imgSuv2 = document.querySelector('#modelo-suv2');
+
 let logoSuv = document.querySelector('#info-suv');
 let precioSuv = document.querySelector('.precio-model');
 let modeloSuvImage = document.querySelector('.modelo-car');
 
 imgSuv.addEventListener('click', openInfoSuv);
 imgSuv.addEventListener('click', changeCars2);
-imgSuv2.addEventListener('click', openInfoSuv)
+//imgSuv2.addEventListener('click', openInfoSuv)
 
-function openInfoSuv() {
-    
+function openInfoSuv() {   
     logoSuv.setAttribute('src', modelosSuv[0].logo);
     precioSuv.textContent = modelosSuv[0].price;
     modeloSuvImage.setAttribute('src', modelosSuv[0].image);
     console.log("here");
 }
+
+// Array de modelos SUV
+let suvLista = [
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004020220526152924/VITARA-4X2.png',
+     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005020220526165735/Alto-145x45.png'
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000000620220606165654/VITARA-4X4.png',
+     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000005920220606165654/Vitara4x4-145x45.png'
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004820220526165541/VITARA-TURBO.png',
+     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007120220526165541/Vitara-Turbo-145x45.png'
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003620220526130732/JIMNY.png',
+     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005020220526130732/Jimny-145x45.png'
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000007220230309195351/modelo-miniatura.png',
+     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000007120230309195351/logo-pequen_o.png'
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005520220526144156/SCROSS.png',
+     logomini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005420220526144156/Scross-145x45.png'
+    }
+];
+
+// Modelos SUV
+//let nuevosLi = [];
+suvLista.forEach((suv) => {
+    let nuevoLi = document.createElement('li');
+    nuevoLi.classList.add('lista');
+    
+    let figureLi = document.createElement('figure');
+    let carImageLi = document.createElement('img');
+    carImageLi.classList.add('modelo');
+    carImageLi.setAttribute('src', suv.car);
+
+    let figureDosLi = document.createElement('figure');
+    let logoCarLi = document.createElement('img');
+    logoCarLi.setAttribute('src', suv.logomini);
+
+    figureLi.appendChild(carImageLi);
+    figureDosLi.appendChild(logoCarLi);
+
+    nuevoLi.appendChild(figureLi);
+    nuevoLi.appendChild(figureDosLi);
+
+    suvModelos.appendChild(nuevoLi);
+});
+
+// Modelos Compactos Y Sedanes
+let compactosLista = [
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007520220526165735/2.png',
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005020220526165735/Alto-145x45.png',
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006120220526180806/CELERIO.png',
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006020220526180806/Celerio-145x45.png',
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004120220526175358/SPRESSO.png',
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005620220526175358/Spresso-145x45.png',
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000004220220527085542/SWIFT.png',
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000006320220527085542/Swift-145x45.png',
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000015620220527094431/MODELO-MINI.png',
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000010020220527094431/LOGO-MINI.png',
+    },
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000004820220527095355/DZIRE.png',
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000004620220527095355/Dzire-145x45.png',
+    }
+];
+
+compactosLista.forEach((comap) => {
+    let nuevoLi = document.createElement('li');
+    nuevoLi.classList.add('lista');
+    
+    let figureLi = document.createElement('figure');
+    let carImageLi = document.createElement('img');
+    carImageLi.classList.add('modelo');
+    carImageLi.setAttribute('src', comap.car);
+
+    let figureDosLi = document.createElement('figure');
+    let logoCarLi = document.createElement('img');
+    logoCarLi.setAttribute('src', comap.logoMini);
+
+    figureLi.appendChild(carImageLi);
+    figureDosLi.appendChild(logoCarLi);
+
+    nuevoLi.appendChild(figureLi);
+    nuevoLi.appendChild(figureDosLi);
+
+    compactosModelos.appendChild(nuevoLi);
+});
+
+// 7 Pasajeros
+let pasajerosLista = [
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005320220526143828/XL7.png',
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006720220526143828/XL7-145x45.png'
+    }
+];
+
+pasajerosLista.forEach((seven) => {
+    let nuevoLi = document.createElement('li');
+    nuevoLi.classList.add('lista');
+    
+    let figureLi = document.createElement('figure');
+    let carImageLi = document.createElement('img');
+    carImageLi.classList.add('modelo');
+    carImageLi.setAttribute('src', seven.car);
+
+    let figureDosLi = document.createElement('figure');
+    let logoCarLi = document.createElement('img');
+    logoCarLi.setAttribute('src', seven.logoMini);
+
+    figureLi.appendChild(carImageLi);
+    figureDosLi.appendChild(logoCarLi);
+
+    nuevoLi.appendChild(figureLi);
+    nuevoLi.appendChild(figureDosLi);
+
+    pasajerosModelos.appendChild(nuevoLi);
+});
+
+// Paneles
+let panelesList = [
+    {
+     car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003920220526173048/APV.png',
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004320220526173048/APV-145x45.png'
+    }
+];
+
+panelesList.forEach((panel) => {
+    let nuevoLi = document.createElement('li');
+    nuevoLi.classList.add('lista');
+    
+    let figureLi = document.createElement('figure');
+    let carImageLi = document.createElement('img');
+    carImageLi.classList.add('modelo');
+    carImageLi.setAttribute('src', panel.car);
+
+    let figureDosLi = document.createElement('figure');
+    let logoCarLi = document.createElement('img');
+    logoCarLi.setAttribute('src', panel.logoMini);
+
+    figureLi.appendChild(carImageLi);
+    figureDosLi.appendChild(logoCarLi);
+
+    nuevoLi.appendChild(figureLi);
+    nuevoLi.appendChild(figureDosLi);
+
+    panelModelos.appendChild(nuevoLi);
+});

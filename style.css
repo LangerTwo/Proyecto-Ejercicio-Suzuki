@@ -8,6 +8,7 @@
 }
 .active {
     display: block;
+    visibility: visible;
 }
 .hide {
     opacity: 0;
@@ -29,6 +30,7 @@
     text-decoration: none;
     color: #000;
     padding: 20px 0;
+    animation: 2s 0.5s ease-in-out;
 }
 .nav-item {
     /* width: 100%; */
@@ -204,7 +206,8 @@ li.nav-item .icon-down:hover {
         padding: 16px 8px;
         width: 100%;
         max-width: 120px;
-        border-top: 4px solid #BF0010;
+        border-top: 4px solid #BF0010;        
+        box-shadow: 1px 1px 5px 0px black;
     }
     .lista-desplegable{
         display: flex;
@@ -234,7 +237,8 @@ li.nav-item .icon-down:hover {
     right: 0;
     top: 90px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    box-shadow: 1px 1px 5px 0px black;
   }
   .link-butn {
     display: flex;
@@ -260,6 +264,7 @@ li.nav-item .icon-down:hover {
     place-content: center;
     margin-top: 20px;
     gap: 15px;
+    /* transition: 600ms, visibility 600ms; */
 }
 .item-grid {
     width: 300px;
@@ -617,11 +622,13 @@ li.nav-item .icon-down:hover {
 
 .modelo-lista{
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    gap: 15px; 
    overflow: hidden;
 }
-
+.modelo-lista li:nth-child(1){
+    opacity: 1;
+}
 .lista{
     display: flex;
     flex-direction: column;
