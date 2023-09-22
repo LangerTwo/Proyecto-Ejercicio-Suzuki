@@ -333,18 +333,30 @@ let compactosLista = [
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004120220526175358/SPRESSO.png',
      logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005620220526175358/Spresso-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007320220526175358/BLANCO.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004320220526175358/Spresso-395x130.png',
+     precio: '15,990'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000004220220527085542/SWIFT.png',
      logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000006320220527085542/Swift-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008620220527085542/BLANCO.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000004320220527085542/Swift-395x130.png',
+     precio: '19,290'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000015620220527094431/MODELO-MINI.png',
      logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000010020220527094431/LOGO-MINI.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011320220527094431/BLANCO.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000010120220527094431/LOGO-GRANDE.png',
+     precio: '20,490'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000004820220527095355/DZIRE.png',
      logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000004620220527095355/Dzire-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000007920220527095355/BLANCO.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000004720220527095355/Dzire-395x130.png',
+     precio: '17,990'
     }
 ];
 
