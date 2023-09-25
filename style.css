@@ -750,46 +750,62 @@ li.nav-item .icon-down:hover {
     padding-top: 10px;
     justify-content: center;
 }
-
-.color1{
+/* .color {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
     margin: 0 5px;
+} */
+#lista-colores li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin: 0 5px;
+}
+#lista-colores li.color-terracota {
+    background-color: #e43823;
+}
+#lista-colores li.color-blanco {
+    background-color: #f4f0e9;
+}
+#lista-colores li.color-gris-plateado {
+    background-color: #cdcdd0;
+}
+#lista-colores li.color-negro {
+    background-color: #000a00;
+}
+#lista-colores li.color-blanco-perlado {
+    background-color: #f4f1ef;
+}
+#lista-colores li.color-plomo {
+    background-color: #3f3f3f;
+}
+#lista-colores li.color-azul {
+    background-color: #1c427b;
+}
+#lista-colores li.color-cafe {
+    background-color: #653308;
+}
+
+/* .color1{  
     background-color: #f4f0e9;
 }
 
 .color2{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    margin: 0 5px;
     background-color: #e43823;
 }
 
-.color3{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    margin: 0 5px;
+.color3{   
     background-color: #cdcdd0;
 }
 
-.color4{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    margin: 0 5px;
+.color4{    
     background-color: #000a00;
-}
+} */
 
 .color-txt{
     margin-top: 15px;
