@@ -36,7 +36,7 @@ let logoModel = document.querySelector('#logo-car figure img');
 let imagenCar = document.querySelector('.car-modelo figure img');
 
 let listaCarColor = document.querySelector('.car-color ul');
-let lista = document.getElementById("lista-colores");
+let lista = document.querySelector("#lista-colores");
 
 let timer;
 
@@ -362,12 +362,14 @@ let compactosLista = [
      carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007820220526180806/BLANCO.png',
      logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004120220526180806/Celerio-395x130.png',
      precio: '16,490',
-     blancoPerlado: "blanco-perlado",
-     gris: "gris-plateado",
-     plomo: "plomo",
-     negro: "negro",
-     azul: "azul",
-     cafe: "cafe"   
+     colores: {
+        blancoPerlado: "blanco-perlado",
+        gris: "gris-plateado",
+        plomo: "plomo",
+        negro: "negro",
+        azul: "azul",
+        cafe: "cafe" 
+     }  
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004120220526175358/SPRESSO.png',
@@ -416,9 +418,9 @@ compactosLista.forEach((comap) => {
         precioModel.textContent = comap.precio;
         logoModel.setAttribute('src', comap.logoMax);
         imagenCar.setAttribute('src', comap.carImage);
-        console.log("here");
-
+        console.log("here");    
         
+        crearListaDeColores(comap);
     })
 
     figureLi.appendChild(carImageLi);
@@ -430,41 +432,58 @@ compactosLista.forEach((comap) => {
     compactosModelos.appendChild(nuevoLi);
 });
 
-// function crearListaDeColores() {                 
-//     for (var clave in compactosLista) {
-//       if (compactosLista.hasOwnProperty(clave)) {
-//         var color = compactosLista[clave];
-//         if (esColor(color)){
-//             var li = document.createElement("li");
-//         li.className = "color-" + color;
-//         listaCarColor.appendChild(li);
-//         }                
-//       }
-//     }
+// if (comap.colores) {
+//     Object.values(comap.colores).forEach((color) => {
+//         let colorLi = document.createElement('li');
+//         colorLi.textContent = color;
+//         lista.appendChild(colorLi);
+//     });
 // }
-// function esColor(cadena) {
-//     var coloresValidos = ["blanco", "terracota", "gris-plateado", "negro", "blanco-perlado", "plomo", "azul", "cafe"];
-//     return coloresValidos.includes(cadena);
-// }
-  
-// crearListaDeColores();
+////////////////////
+function crearListaDeColores(comap) {      
+    listaCarColor.classList.add("lista-de-colores");
 
+    for (var clave in comap.colores) {
+      if (comap.colores.hasOwnProperty(clave)) {
+        var color = comap.colores[clave];
+        if (esColor(color)){
+            var li = document.createElement("li");
+        li.className = "color-" + color;
+        listaCarColor.appendChild(li);
+        }                
+      }
+    }
+    var listaColoresAnterior = document.querySelector(".lista-de-colores");
+    if (listaColoresAnterior) {
+        listaColoresAnterior.parentNode.replaceChild(listaCarColor, listaColoresAnterior);
+    }
+}
+
+
+ 
+
+function esColor(cadena) {
+    var coloresValidos = ["blanco", "terracota", "gris-plateado", "negro", "blanco-perlado", "plomo", "azul", "cafe"];
+    return coloresValidos.includes(cadena);
+}
+  
+crearListaDeColores();
+
+///////////////////////////////////
+// function crearListaDeColores() {
+//     var lista = document.getElementById("lista-colores");
+//     var colores = comap.colores;
+  
+//     Object.keys(colores).forEach(function(clave) {
+//       var color = colores[clave];
+//       var li = document.createElement("li");
+//       li.className = "color-" + color;
+//       lista.appendChild(li);
+//     });
+// }
+//crearListaDeColores();
+  
 // 7 Pasajeros
-
-function crearListaDeColores() {
-    var lista = document.getElementById("lista-colores");
-    var colores = miObjeto.colores; // Acceder al objeto de colores
-  
-    // Utilizar forEach para recorrer las propiedades del objeto
-    Object.keys(colores).forEach(function(clave) {
-      var color = colores[clave];
-      var li = document.createElement("li");
-      li.className = "color-" + color;
-      lista.appendChild(li);
-    });
-  }
-  
-  crearListaDeColores();
 
 let pasajerosLista = [
     {
