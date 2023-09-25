@@ -266,27 +266,45 @@ function openInfoSuv() {
 let suvLista = [
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004020220526152924/VITARA-4X2.png',
-     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006320220526152924/Vitara4x2-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006320220526152924/Vitara4x2-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009520220526152924/blanco.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006420220526152924/Vitara4x2-395x130.png',
+     precio: '27.340'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000000620220606165654/VITARA-4X4.png',
-     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000005920220606165654/Vitara4x4-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000005920220606165654/Vitara4x4-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000007920220606165654/blanco.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000006020220606165654/Vitara4x4-395x130.png',
+     precio: '33.490'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004820220526165541/VITARA-TURBO.png',
-     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007120220526165541/Vitara-Turbo-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007120220526165541/Vitara-Turbo-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011220220526165541/blanco.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007020220526165541/Vitara-Turbo-395x130.png',
+     precio: '39.340'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003620220526130732/JIMNY.png',
-     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005020220526130732/Jimny-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005020220526130732/Jimny-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007220220526130732/PLOMO.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003520220526130732/Jimny-395x130.png',
+     precio: '30.840'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000007220230309195351/modelo-miniatura.png',
-     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000007120230309195351/logo-pequen_o.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000007120230309195351/logo-pequen_o.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000008620230309195351/blancogv.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000007020230309195351/logo-grande.png',
+     precio: '30.340'
     },
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005520220526144156/SCROSS.png',
-     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005420220526144156/Scross-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005420220526144156/Scross-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004620220526144156/PLOMO.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003820220526144156/Scross-395x130.png',
+     precio: '33.640'
     }
 ];
 
@@ -304,6 +322,13 @@ suvLista.forEach((suv) => {
     let figureDosLi = document.createElement('figure');
     let logoCarLi = document.createElement('img');
     logoCarLi.setAttribute('src', suv.logoMini);
+
+    nuevoLi.addEventListener('click', () => {
+        precioModel.textContent = suv.precio;
+        logoModel.setAttribute('src', suv.logoMax);
+        imagenCar.setAttribute('src', suv.carImage);
+        console.log("here");
+    })
 
     figureLi.appendChild(carImageLi);
     figureDosLi.appendChild(logoCarLi);
@@ -393,7 +418,10 @@ compactosLista.forEach((comap) => {
 let pasajerosLista = [
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005320220526143828/XL7.png',
-     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006720220526143828/XL7-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006720220526143828/XL7-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008520220526143828/blanco.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000005220220526143828/XL7-395x130.png',
+     precio: '26.340'
     }
 ];
 
@@ -410,6 +438,13 @@ pasajerosLista.forEach((seven) => {
     let logoCarLi = document.createElement('img');
     logoCarLi.setAttribute('src', seven.logoMini);
 
+    nuevoLi.addEventListener('click', () => {
+        precioModel.textContent = seven.precio;
+        logoModel.setAttribute('src', seven.logoMax);
+        imagenCar.setAttribute('src', seven.carImage);
+        console.log("here");
+    })
+
     figureLi.appendChild(carImageLi);
     figureDosLi.appendChild(logoCarLi);
 
@@ -423,7 +458,10 @@ pasajerosLista.forEach((seven) => {
 let panelesList = [
     {
      car: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003920220526173048/APV.png',
-     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004320220526173048/APV-145x45.png'
+     logoMini: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004320220526173048/APV-145x45.png',
+     carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004920220526173048/apv.png',
+     logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003820220526173048/APV-395x130.png',
+     precio: '23.700'
     }
 ];
 
@@ -439,6 +477,13 @@ panelesList.forEach((panel) => {
     let figureDosLi = document.createElement('figure');
     let logoCarLi = document.createElement('img');
     logoCarLi.setAttribute('src', panel.logoMini);
+
+    nuevoLi.addEventListener('click', () => {
+        precioModel.textContent = panel.precio;
+        logoModel.setAttribute('src', panel.logoMax);
+        imagenCar.setAttribute('src', panel.carImage);
+        console.log("here");
+    })
 
     figureLi.appendChild(carImageLi);
     figureDosLi.appendChild(logoCarLi);
