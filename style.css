@@ -772,7 +772,7 @@ li.nav-item .icon-down:hover {
 #lista-colores li.color-blanco {
     background-color: #f4f0e9;
 }
-#lista-colores li.color-gris-plateado {
+#lista-colores li.color-gris {
     background-color: #cdcdd0;
 }
 #lista-colores li.color-negro {
@@ -789,6 +789,63 @@ li.nav-item .icon-down:hover {
 }
 #lista-colores li.color-cafe {
     background-color: #653308;
+}
+#lista-colores li.color-naranja {
+    background-color: #e27113;
+}
+#lista-colores li.color-rojo {
+    background-color: #c3010a;
+}
+#lista-colores li.color-rojoBrillante {
+    background-color: #db122f;
+}
+#lista-colores li.color-azulNegro {
+    background-color: #0761aa;
+}
+#lista-colores li.color-rojoNegro {
+    background-color: #db122f;
+}
+#lista-colores li.color-khaki {
+    background-color: #785d31;
+}
+#lista-colores li.color-lila {
+    background-color: #7d3345;
+}
+#lista-colores li.color-amarrilloNegro {
+    background-color: #f99f2d;
+}
+#lista-colores li.color-arenaNegro {
+    background-color: #d6cebd;
+}
+#lista-colores li.color-iceBlue {
+    background-color: #badbe2;
+}
+#lista-colores li.color-arena {
+    background-color: #d6cebd;
+}
+#lista-colores li.color-azulOscuro {
+    background-color: #0c3150;
+}
+#lista-colores li.color-rojoOscuro {
+    background-color: #c10616;
+}
+#lista-colores li.color-plataNegro {
+    background-color: #ccc7c7;
+}
+#lista-colores li.color-blancoNegro {
+    background-color: #f3f2f2;
+}
+#lista-colores li.color-azulPerlado {
+    background-color: #0c3150;
+}
+#lista-colores li.color-rojoPerlado {
+    background-color: #8f1c25;
+}
+#lista-colores li.color-turquesa {
+    background-color: #00a0b1;
+}
+#lista-colores li.color-turquesaNegro {
+    background-color: #00a0b1;
 }
 
 /* .color1{  
