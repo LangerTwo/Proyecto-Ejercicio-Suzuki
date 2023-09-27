@@ -272,14 +272,14 @@ let suvLista = [
      carImage: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009520220526152924/blanco.png',
      logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006420220526152924/Vitara4x2-395x130.png',
      precio: '27.340',
-     colores: [
+     colores : [
         { blanco: 'blanco',
           carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009520220526152924/blanco.png',
           nameColor: 'Ártico Blanco'},
-        { gris: "gris",
+        { gris: 'gris',
           carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009320220526152924/gris-plata.png',
-          nameColor: "Gris Plata"},
-        { negro: "negro",
+          nameColor: 'Gris Plata'},
+        { negro: 'negro',
           carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000010220220526152924/negro.png',
           nameColor: "Negro"},
         { turquesa: "turquesa",
@@ -313,21 +313,29 @@ let suvLista = [
      precio: '33.490',
      colores: [
         { blanco: 'blanco',
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000007920220606165654/blanco.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000007920220606165654/blanco.png',
+          nameColor: 'Ártico Blanco'},
         { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000007720220606165654/gris-plata.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000007720220606165654/gris-plata.png',
+          nameColor: 'Gris Plata'},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008420220606165654/negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008420220606165654/negro.png',
+          nameColor: 'Negro'},
         { amarrilloNegro: "amarrilloNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000007820220606165654/terracota.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000007820220606165654/terracota.png',
+          nameColor: 'Terracota/Negro'},
         { turquesa: "turquesa",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008520220606165654/turquesa-negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008520220606165654/turquesa-negro.png',
+          nameColor: 'Turquesa/Negro'},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008020220606165654/plomo-negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008020220606165654/plomo-negro.png',
+          nameColor: 'Plomo/Negro'},
         { arenaNegro: "arenaNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008320220606165654/savanna-arena.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008320220606165654/savanna-arena.png',
+          nameColor: 'Arena/Negro'},
         { iceBlue: "iceBlue",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008220220606165654/ice-blue.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220606/imag/foto_0000008220220606165654/ice-blue.png',
+          nameColor: 'Ice Blue/Negro'}
     ]
     },
     {
@@ -338,21 +346,29 @@ let suvLista = [
      precio: '39.340',
      colores: [
         { blanco: 'blanco',
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011220220526165541/blanco.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011220220526165541/blanco.png',
+          nameColor: 'Ártico Blanco'},
         { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011020220526165541/gris-plata.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011020220526165541/gris-plata.png',
+          nameColor: 'Gris Plata'},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011720220526165541/negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011720220526165541/negro.png',
+          nameColor: 'Negro'},
         { amarrilloNegro: "amarrilloNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011120220526165541/terracota.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011120220526165541/terracota.png',
+          nameColor: 'Terracota/Negro'},
         { turquesa: "turquesa",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011820220526165541/turquesa-negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011820220526165541/turquesa-negro.png',
+          nameColor: 'Turquesa/Negro'},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011320220526165541/plomo-negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011320220526165541/plomo-negro.png',
+          nameColor: 'Plomo/Negro'},
         { arenaNegro: "arenaNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011620220526165541/savanna-arena.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011620220526165541/savanna-arena.png',
+          nameColor: 'Arena/Negro'},
         { iceBlue: "iceBlue",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011520220526165541/ice-blue.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000011520220526165541/ice-blue.png',
+          nameColor: 'Ice Blue/Negro'}
      ]
     },
     {
@@ -362,18 +378,24 @@ let suvLista = [
      logoMax: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000003520220526130732/Jimny-395x130.png',
      precio: '30.840',
      colores: [
-        { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007220220526130732/PLOMO.png'},
         { azul: "azul",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006920220526130732/AZUL.png'},
-        { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007120220526130732/GRIS-PLATA.png'},
-        { arena: "arena",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007020220526130732/ARENA.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006920220526130732/AZUL.png',
+          nameColor: 'Azul'},
         { verde: "verde",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007420220526130732/VERDE.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007420220526130732/VERDE.png',
+          nameColor: 'Verde'},
+        { plomo: "plomo",
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007220220526130732/PLOMO.png',
+          nameColor: 'Plomo'},  
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007320220526130732/NEGRO.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007320220526130732/NEGRO.png',
+          nameColor: 'Negro'},     
+        { plata: "plata",
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007120220526130732/GRIS-PLATA.png',
+          nameColor: 'Plata'},
+        { blanco: "blanco",
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230925/imag/foto_0000011620230925163349/Blanco.png',
+          nameColor: 'Blanco'}        
      ]
     },
     {
@@ -384,23 +406,32 @@ let suvLista = [
      precio: '30.340',
      colores: [
         { blanco: 'blanco',
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000008620230309195351/blancogv.png'},
-        { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009320230309195351/plaatagv.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000008620230309195351/blancogv.png',
+          nameColor: 'Blanco'},
+        { plata: "plata",
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009320230309195351/plaatagv.png',
+          nameColor: 'Plata'},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000008920230309195351/plomogv.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000008920230309195351/plomogv.png',
+          nameColor: 'Plomo'},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009020230309195351/negrogv.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009020230309195351/negrogv.png',
+          nameColor: 'Negro'},
         { azulOscuro: "azulOscuro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000008820230309195351/azul.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000008820230309195351/azul.png',
+          nameColor: 'Azul'},
         { rojoOscuro: "rojoOscuro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009120230309195351/rojogv.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009120230309195351/rojogv.png',
+          nameColor: 'Rojo'},
         { rojoNegro: "rojoNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009420230309195351/rojonegrogv.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009420230309195351/rojonegrogv.png',
+          nameColor: 'Rojo/Negro'},
         { plataNegro: "plataNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000008720230309195351/platanegrogv.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000008720230309195351/platanegrogv.png',
+          nameColor: 'Plata/Negro'},
         { blancoNegro: "blancoNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009220230309195351/blanconegrogv.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20230309/imag/foto_0000009220230309195351/blanconegrogv.png',
+          nameColor: 'Blanco/Negro'}
      ]
     },
     {
@@ -411,17 +442,23 @@ let suvLista = [
      precio: '33.640',
      colores: [
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004620220526144156/PLOMO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004620220526144156/PLOMO.png',
+          nameColor: 'Plomo'},
         { blanco: "blanco",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004320220526144156/BLANCO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004320220526144156/BLANCO.png',
+          nameColor: 'Blanco'},
         { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004420220526144156/GRIS-PLATA.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004420220526144156/GRIS-PLATA.png',
+          nameColor: 'Gris Plata'},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004220220526144156/NEGRO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004220220526144156/NEGRO.png',
+          nameColor: 'Negro'},
         { azulPerlado: "azulPerlado",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004120220526144156/AZUL.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004120220526144156/AZUL.png',
+          nameColor: 'Azul Perlado'},
         { rojoPerlado: "rojoPerlado",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004520220526144156/ROJO.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004520220526144156/ROJO.png',
+          nameColor: 'Rojo Perlado'}
      ]
     }
 ];
@@ -508,13 +545,17 @@ let compactosLista = [
      precio: '12,950',
      colores: [
       { blanco: 'blanco',
-        carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006520220526165735/BLANCO.png'},
+        carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006520220526165735/BLANCO.png',
+        nameColor: 'Ártico Blanco'},
       { terracota: "terracota",
-        carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006220220526165735/TERRACOTA.png'},
+        carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006220220526165735/TERRACOTA.png',
+        nameColor: 'Terracota'},
       { gris: "gris",
-        carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006420220526165735/GRIS-PLATA.png'},
+        carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006420220526165735/GRIS-PLATA.png',
+        nameColor: 'Gris Plata'},
       { negro: "negro",
-        carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006320220526165735/NEGRO.png'}
+        carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000006320220526165735/NEGRO.png',
+        nameColor: 'Negro'}
     ]
     },
     {
@@ -525,17 +566,23 @@ let compactosLista = [
      precio: '16,490',
      colores: [
         { blanco: "blanco",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007820220526180806/BLANCO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007820220526180806/BLANCO.png',
+          nameColor: 'Blanco Perlado'},
         { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007620220526180806/GRIS-PLATA.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007620220526180806/GRIS-PLATA.png',
+          nameColor: 'Gris Plata'},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008120220526180806/PLOMO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008120220526180806/PLOMO.png',
+          nameColor: 'Plomo'},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007720220526180806/NEGRO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007720220526180806/NEGRO.png',
+          nameColor: 'Negro'},
         { azul: "azul",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008220220526180806/AZUL.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008220220526180806/AZUL.png',
+          nameColor: 'Azul'},
         { cafe: "cafe",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007920220526180806/CAFE.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007920220526180806/CAFE.png',
+          nameColor: 'Café'}
       ]
     },
     {
@@ -546,17 +593,23 @@ let compactosLista = [
      precio: '15,990',
      colores: [
         { blanco: "blanco",
-          carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007320220526175358/BLANCO.png'},
+          carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007320220526175358/BLANCO.png',
+          nameColor: 'Ártico Blanco'},
         { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007120220526175358/GRIS-PLATA.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007120220526175358/GRIS-PLATA.png',
+          nameColor: 'Gris Plata'},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007620220526175358/PLOMO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007620220526175358/PLOMO.png',
+          nameColor: 'Plomo'},
         { naranja: "naranja",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007220220526175358/TERRACOTA.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007220220526175358/TERRACOTA.png',
+          nameColor: 'Naranja'},
         { rojo: "rojo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007720220526175358/ROJO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007720220526175358/ROJO.png',
+          nameColor: 'Rojo'},
         { azul: "azul",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007420220526175358/AZUL.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000007420220526175358/AZUL.png',
+          nameColor: 'Azul'}
       ]
     },
     {
@@ -567,19 +620,26 @@ let compactosLista = [
      precio: '19,290',
      colores: [
         { blanco: "blanco",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008620220527085542/BLANCO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008620220527085542/BLANCO.png',
+          nameColor: 'Ártico Blanco'},
         { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008420220527085542/GRIS-PLATA.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008420220527085542/GRIS-PLATA.png',
+          nameColor: 'Gris Plata'},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000009020220527085542/PLOMO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000009020220527085542/PLOMO.png',
+          nameColor: 'Plomo'},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008520220527085542/NEGRO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008520220527085542/NEGRO.png',
+          nameColor: 'Negro'},
         { azul: "azul",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000009120220527085542/AZUL.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000009120220527085542/AZUL.png',
+          nameColor: 'Azul'},
         { rojoNegro: "rojoNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008720220527085542/ROJO-NEGRO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008720220527085542/ROJO-NEGRO.png',
+          nameColor: 'Rojo/Negro'},
         { azulNegro: "azulNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008920220527085542/AZUL-NEGRO.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008920220527085542/AZUL-NEGRO.png',
+          nameColor: 'Azul/Negro'}
       ]
     },
     {
@@ -590,17 +650,23 @@ let compactosLista = [
      precio: '20,490',
      colores: [
         { blanco: "blanco",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011320220527094431/BLANCO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011320220527094431/BLANCO.png',
+          nameColor: 'Ártico Blanco'},
         { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011220220527094431/PLATA.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011220220527094431/PLATA.png',
+          nameColor: 'Gris Plata'},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011620220527094431/NEGRO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011620220527094431/NEGRO.png',
+          nameColor: 'Negro'},
         { rojo: "rojo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011420220527094431/ROJO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011420220527094431/ROJO.png',
+          nameColor: 'Rojo'},
         { azul: "azul",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011120220527094431/AZUL.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011120220527094431/AZUL.png',
+          nameColor: 'Azul'},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011520220527094431/PLOMO.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000011520220527094431/PLOMO.png',
+          nameColor: 'Plomo'}
       ]
     },
     {
@@ -611,15 +677,20 @@ let compactosLista = [
      precio: '17,990',
      colores: [
         { blanco: "blanco",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000007920220527095355/BLANCO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000007920220527095355/BLANCO.png',
+          nameColor: 'Ártico Blanco'},
         { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000007720220527095355/PLATA.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000007720220527095355/PLATA.png',
+          nameColor: 'Gris Plata'},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000007820220527095355/NEGRO.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000007820220527095355/NEGRO.png',
+          nameColor: 'Negro'},
         { azul: "azul",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008320220527095355/AZUL.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008320220527095355/AZUL.png',
+          nameColor: 'Azul'},
         { rojoBrillante: "rojoBrillante",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008020220527095355/ROJO.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220527/imag/foto_0000008020220527095355/ROJO.png',
+          nameColor: 'Rojo'}
       ]
     }
 ];
@@ -696,17 +767,23 @@ let pasajerosLista = [
      precio: '26.340',
      colores: [
         { blanco: 'blanco',
-          carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008520220526143828/blanco.png'},
+          carColor:  'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008520220526143828/blanco.png',
+          nameColor: 'Ártico Blanco'},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008320220526143828/plomo.png'  },
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008320220526143828/plomo.png',
+          nameColor: 'Plomo'},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008820220526143828/negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008820220526143828/negro.png',
+          nameColor: 'Negro'},
         { khaki: "khaki",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008420220526143828/khaki.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008420220526143828/khaki.png',
+          nameColor: 'Khaki'},
         { lila: 'lila',
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008920220526143828/borgon_a.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008920220526143828/borgon_a.png',
+          nameColor: 'Borgoña Lila'},
         { naranja: "naranja",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008620220526143828/terracota.png'}  
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000008620220526143828/terracota.png',
+          nameColor: 'Naranja'}  
       ]
     }
 ];
@@ -782,7 +859,8 @@ let panelesList = [
      precio: '23.700',
      colores: [
         { blanco: 'blanco',
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004920220526173048/apv.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000004920220526173048/apv.png',
+          nameColor: 'Blanco'}
       ]
     }
 ];
@@ -838,7 +916,6 @@ function crearListaDeColores(colores) {
         li.addEventListener('click', () => {
             // Realiza acciones cuando se hace clic en un color
             console.log('Color seleccionado:', color);
-            console.log("Hi");
         });
 
         lista.appendChild(li);
@@ -913,6 +990,7 @@ arrayTodos.forEach((todoM) => {
 
 function crearListaDeColores(colores) {
     let lista = document.querySelector('.car-color ul');
+    let carName = document.querySelector('.car-color p');
     if (!lista) {
         lista = document.createElement('ul');
         lista.classList.add('car-color');
@@ -931,6 +1009,9 @@ function crearListaDeColores(colores) {
         li.addEventListener('click', () => {
             // Realiza acciones cuando se hace clic en un color
             console.log('Color seleccionado:', color);
+            console.log('Hi:', color);
+            carName.textContent = colorObj.nameColor;
+            imagenCar.setAttribute('src', colorObj.carColor);
         });
 
         lista.appendChild(li);
