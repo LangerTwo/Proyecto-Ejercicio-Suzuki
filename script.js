@@ -531,10 +531,6 @@ function crearListaDeColores(colores) {
     carColorDiv.appendChild(lista);
 }
 
-function nameCarColor(colores) {
-  
-}
-
 // Modelos Compactos Y Sedanes
 let compactosLista = [
     {
@@ -1021,3 +1017,4 @@ function crearListaDeColores(colores) {
     let carColorDiv = document.querySelector('.car-color');
     carColorDiv.appendChild(lista);
 }
+

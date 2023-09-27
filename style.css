@@ -624,7 +624,8 @@ li.nav-item .icon-down:hover {
    display: flex;   
    justify-content: flex-start;;    
    gap: 15px; 
-   overflow: hidden;
+   /* overflow: hidden; */
+   overflow-x: auto;
 }
 .modelo-lista li:nth-child(2){
     opacity: 1;
