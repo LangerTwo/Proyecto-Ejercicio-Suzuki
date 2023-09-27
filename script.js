@@ -483,6 +483,7 @@ function crearListaDeColores(colores) {
             console.log('Color seleccionado:', color);
             colorName.textContent = colores.nameColor;
             colorDelCar.setAttribute('src', carColor);
+            console.log('Hello:', color);
         });
 
         lista.appendChild(li);
@@ -837,6 +838,7 @@ function crearListaDeColores(colores) {
         li.addEventListener('click', () => {
             // Realiza acciones cuando se hace clic en un color
             console.log('Color seleccionado:', color);
+            console.log("Hi");
         });
 
         lista.appendChild(li);
