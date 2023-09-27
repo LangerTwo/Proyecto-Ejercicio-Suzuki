@@ -766,6 +766,17 @@ li.nav-item .icon-down:hover {
     position: relative;
     margin: 0 5px;
 }
+#lista-colores li::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
 #lista-colores li.color-terracota {
     background-color: #e43823;
 }
@@ -846,6 +857,9 @@ li.nav-item .icon-down:hover {
 }
 #lista-colores li.color-turquesaNegro {
     background-color: #00a0b1;
+}
+#lista-colores li.color-verde {
+    background-color: #3d4332;
 }
 
 /* .color1{  

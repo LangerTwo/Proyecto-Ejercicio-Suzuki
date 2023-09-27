@@ -35,8 +35,8 @@ let precioModel = document.querySelector('#price-car .precio .precio-model');
 let logoModel = document.querySelector('#logo-car figure img');
 let imagenCar = document.querySelector('.car-modelo figure img');
 
-let listaCarColor = document.querySelector('.car-color ul');
-let lista = document.querySelector("#lista-colores");
+
+let nombreDelColor = document.querySelector('.color-txt');
 
 let timer;
 
@@ -274,25 +274,35 @@ let suvLista = [
      precio: '27.340',
      colores: [
         { blanco: 'blanco',
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009520220526152924/blanco.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009520220526152924/blanco.png',
+          nameColor: 'Ártico Blanco'},
         { gris: "gris",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009320220526152924/gris-plata.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009320220526152924/gris-plata.png',
+          nameColor: "Gris Plata"},
         { negro: "negro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000010220220526152924/negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000010220220526152924/negro.png',
+          nameColor: "Negro"},
         { turquesa: "turquesa",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009420220526152924/turquesa.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009420220526152924/turquesa.png',
+          nameColor: "Turquesa"},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000010320220526152924/plomo.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000010320220526152924/plomo.png',
+          nameColor: "Plomo"},
         { amarrilloNegro: "amarrilloNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009620220526152924/terracota.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009620220526152924/terracota.png',
+          nameColor: "Terracota/Negro"},
         { turquesaNegro: "turquesaNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000010120220526152924/turquesa-negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000010120220526152924/turquesa-negro.png',
+          nameColor: "Turquesa/Negro"},
         { plomo: "plomo",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000010020220526152924/plomo-negro.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000010020220526152924/plomo-negro.png',
+          nameColor: "Plomo/Negro"},
         { arenaNegro: "arenaNegro",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009720220526152924/savanna-arena.png'},
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009720220526152924/savanna-arena.png',
+          nameColor: "Arena/Negro"},
         { iceBlue: "iceBlue",
-          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009820220526152924/ice-blue.png'}
+          carColor: 'https://www.suzuki.cr/suzuki/site/artic/20220526/imag/foto_0000009820220526152924/ice-blue.png',
+          nameColor: "Ice Blue/Negro"}
     ]
     },
     {
@@ -451,6 +461,8 @@ suvLista.forEach((suv) => {
 
 function crearListaDeColores(colores) {
     let lista = document.querySelector('.car-color ul');
+    let colorName = document.querySelector('.car-color p');
+    let colorDelCar = document.querySelector('.car-modelo figure modelo car');
     if (!lista) {
         lista = document.createElement('ul');
         lista.classList.add('car-color');
@@ -469,6 +481,8 @@ function crearListaDeColores(colores) {
         li.addEventListener('click', () => {
             // Realiza acciones cuando se hace clic en un color
             console.log('Color seleccionado:', color);
+            colorName.textContent = colores.nameColor;
+            colorDelCar.setAttribute('src', carColor);
         });
 
         lista.appendChild(li);
@@ -477,6 +491,10 @@ function crearListaDeColores(colores) {
     lista.style.display = 'flex';
     let carColorDiv = document.querySelector('.car-color');
     carColorDiv.appendChild(lista);
+}
+
+function nameCarColor(colores) {
+  
 }
 
 // Modelos Compactos Y Sedanes
