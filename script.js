@@ -37,6 +37,7 @@ let imagenCar = document.querySelector('.car-modelo figure img');
 
 
 let nombreDelColor = document.querySelector('.color-txt');
+let listaDeAutos = document.querySelector('.modelo-lista');
 
 let timer;
 
@@ -253,16 +254,6 @@ let logoSuv = document.querySelector('#info-suv');
 let precioSuv = document.querySelector('.precio-model');
 let modeloSuvImage = document.querySelector('.modelo-car');
 
-// imgSuv.addEventListener('click', openInfoSuv);
-// imgSuv.addEventListener('click', changeCars2);
-//imgSuv2.addEventListener('click', openInfoSuv)
-
-function openInfoSuv() {   
-    logoSuv.setAttribute('src', modelosSuv[0].logo);
-    precioSuv.textContent = modelosSuv[0].price;
-    modeloSuvImage.setAttribute('src', modelosSuv[0].image);
-    console.log("here");
-}
 
 // Array de modelos SUV
 let suvLista = [
@@ -928,20 +919,6 @@ let todosModelos = [compactosLista, suvLista, pasajerosLista, panelesList];
 
 let arrayTodos = [];
 
-// for (let arr of todosModelos) {
-//     if (arr.length > 0) {
-//         arrayTodos.push(arr[0]);
-//     }
-// }
-
-// for (let arr of todosModelos) {
-//     if (arr.length > 0) {
-//         for (let elemento of arr) {
-//             arrayTodos.push(elemento);
-//         }
-//     }
-// }
-
 for (let arr of todosModelos) {
     if (arr.length > 0) {
         let shufflerArr = arr.slice();
@@ -1018,3 +995,29 @@ function crearListaDeColores(colores) {
     carColorDiv.appendChild(lista);
 }
 
+///////////
+modelosTodos.addEventListener('scroll', (event) => {
+  console.log("se mueve");
+});
+
+//function pruebaScroll(todoM) {
+ // modelosTodos.scrollLeft += 218;
+//}
+
+
+modelosTodos.addEventListener('click', (event) => {
+  
+  const clickedItem = event.target.closest('li'); 
+  if (!clickedItem) return;
+    const containerWidth = listaDeAutos.offsetWidth;
+    const itemWidth = clickedItem.offsetWidth;
+    const itemPosition = clickedItem.offsetLeft;
+
+    const scrollPosition = itemPosition - (containerWidth / 2) + (itemWidth / 2);
+    console.log("hi");
+            
+    listaDeAutos.scrollTo({
+      left: scrollPosition,
+      behavior: 'smooth',
+    });
+});
